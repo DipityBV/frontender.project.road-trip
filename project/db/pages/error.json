@@ -72,5 +72,274 @@
 			}
 		}
 	},
-	"containers": []
+	"containers": [
+		{
+			"frontender": "f2c4e2e97b88f2eee8dd2ee4602f5b76",
+			"template": "demo/containers/navigation/navigation.html.twig",
+			"name": {
+				"en-GB": "Navigation"
+			},
+			"description": {
+				"en-GB": "Simple navigation container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"links": {
+							"value": [
+								{
+									"label": {
+										"en-GB": "Home"
+									},
+									"page": "home",
+									"id": ""
+								},
+								{
+									"label": {
+										"en-GB": "Demo menu"
+									},
+									"page": "#",
+									"id": ""
+								},
+								{
+									"label": {
+										"en-GB": "Demo item"
+									},
+									"page": "#",
+									"id": ""
+								}
+							],
+							"label": {
+								"en-GB": "Links"
+							},
+							"control": "core/route",
+							"repeatable": true
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "nav",
+							"control": "container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"label": {
+								"en-GB": "Container class"
+							},
+							"control": "core/text"
+						}
+					}
+				}
+			},
+			"containers": []
+		},
+		{
+			"frontender": "d4bd997be80947c34a6695c549ae4c2f",
+			"template": "demo/containers/banner/banner.html.twig",
+			"name": {
+				"en-GB": "Banner"
+			},
+			"description": {
+				"en-GB": "Banner container"
+			},
+			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "dJdcb11aboQ"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "404"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"button": {
+							"value": {
+								"label": {
+									"en-GB": "Learn more"
+								},
+								"page": "",
+								"id": ""
+							},
+							"label": {
+								"en-GB": "Button"
+							},
+							"control": "core/route"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "section",
+							"control": "container_tag"
+						},
+						"container_class": {
+							"value": "bg-img",
+							"label": {
+								"en-GB": "Container class"
+							},
+							"control": "core/text"
+						}
+					}
+				}
+			},
+			"containers": []
+		},
+		{
+			"frontender": "fe7b3aebaeb31c201a4f0bf89417b6c7",
+			"template": "demo/containers/header.html.twig",
+			"name": {
+				"en-GB": "Header"
+			},
+			"description": {
+				"en-GB": "Simple header container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"label": {
+									"en-GB": "Road trip by TEMPLATED"
+								},
+								"page": "",
+								"id": ""
+							},
+							"label": {
+								"en-GB": "Links"
+							},
+							"control": "core/route"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "header",
+							"control": "container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"label": {
+								"en-GB": "Container class"
+							},
+							"control": "core/text"
+						}
+					}
+				}
+			},
+			"containers": []
+		},
+		{
+			"frontender": "8c1662bfbc64336c7f5531cdc74c4fd3",
+			"template": "demo/containers/footer.html.twig",
+			"name": {
+				"en-GB": "Footer"
+			},
+			"description": {
+				"en-GB": "Simple footer container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "Contact us"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"copyright": {
+							"value": {
+								"en-GB": "Feel free to copy and use this template."
+							},
+							"label": {
+								"en-GB": "Lead paragraph"
+							},
+							"control": "core/textarea"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "footer",
+							"control": "container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"label": {
+								"en-GB": "Container class"
+							},
+							"control": "core/text"
+						}
+					}
+				}
+			},
+			"containers": []
+		}
+	]
 }
