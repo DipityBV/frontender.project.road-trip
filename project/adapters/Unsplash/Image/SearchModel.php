@@ -1,6 +1,6 @@
 <?php
 
-namespace Prototype\Model\Unsplash\Image;
+namespace Frontender\Platform\Model\Unsplash\Image;
 
 use Slim\Container;
 use Prototype\Model\Unsplash\ImageModel;
