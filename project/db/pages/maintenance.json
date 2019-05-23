@@ -218,72 +218,72 @@
 			"containers": []
 		},
 		{
-			"frontender": "1a01503849ec3eabe74c5bc2944fa2da",
-			"template": "demo/containers/navigation/navigation.html.twig",
-			"name": {
-				"en-GB": "Navigation"
-			},
-			"description": {
-				"en-GB": "Simple navigation container"
-			},
-			"template_config": {
-				"content": {
-					"label": {
-						"en-GB": "Content"
-					},
-					"controls": {
-						"links": {
-							"value": [
-								{
-									"label": {
-										"en-GB": "Home"
-									},
-									"page": "home",
-									"id": ""
-								},
-								{
-									"label": {
-										"en-GB": "Demo menu"
-									},
-									"page": "#",
-									"id": ""
-								},
-								{
-									"label": {
-										"en-GB": "Demo item"
-									},
-									"page": "#",
-									"id": ""
-								}
-							],
-							"label": {
-								"en-GB": "Links"
-							},
-							"control": "core/route",
-							"repeatable": true
-						}
-					}
-				},
-				"config": {
-					"label": {
-						"en-GB": "Settings"
-					},
-					"controls": {
-						"container_tag": {
+		    "frontender": "1557733871",
+		    "template": "demo/containers/navigation/navigation.html.twig",
+		    "name": {
+		        "en-GB": "Navigation"
+		    },
+		    "description": {
+		        "en-GB": "Simple navigation container"
+		    },
+		    "template_config": {
+		        "content": {
+		            "label": {
+		                "en-GB": "Content"
+		            },
+		            "controls": {
+		                "links": {
+		    				"value": [
+		    					{
+		    						"label": {
+		    							"en-GB": "Home"
+		    						},
+		    						"page": "home",
+		    						"id": ""
+		    					},
+		    					{
+		    						"label": {
+		    							"en-GB": "Demo menu"
+		    						},
+		    						"page": "#",
+		    						"id": ""
+		    					},
+		    					{
+		    						"label": {
+		    							"en-GB": "Demo item"
+		    						},
+		    						"page": "#",
+		    						"id": ""
+		    					}
+		    				],
+		    				"label": {
+		    					"en-GB": "Links"
+		    				},
+		    				"control": "core/route",
+		    				"repeatable": true
+		    			}
+		            }
+		        },
+		        "config": {
+		            "label": {
+		                "en-GB": "Settings"
+		            },
+		            "controls": {
+		                "container_tag": {
 							"value": "nav",
-							"control": "container_tag"
+							"control": "project/container_tag"
 						},
-						"container_class": {
-							"value": "",
-							"label": {
-								"en-GB": "Container class"
-							},
-							"control": "core/text"
-						}
-					}
-				}
-			},
-			"containers": []
+		                "container_class": {
+		                    "value": "",
+		                    "label": {
+		                        "en-GB": "Container class"
+		                    },
+		                    "control": "core/text"
+		                }
+		            }
+		        }
+		    },
+		    "containers": []
 		},
 		{
 			"frontender": "2be21712922b2d4473ce6bec2de81d4f",

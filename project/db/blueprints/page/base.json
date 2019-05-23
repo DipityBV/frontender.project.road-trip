@@ -130,7 +130,7 @@
 							"control": "project/container_tag"
 						},
 		                "container_class": {
-		                    "value": "wrapper post bg-img",
+		                    "value": "",
 		                    "label": {
 		                        "en-GB": "Container class"
 		                    },
