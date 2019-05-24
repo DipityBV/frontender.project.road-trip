@@ -1,0 +1,129 @@
+{
+	"frontender": "1558705112",
+	"template": "demo/containers/article/body.html.twig",
+	"name": {
+		"en-GB": "Article body"
+	},
+	"description": {
+		"en-GB": "Article body"
+	},
+	"template_config": {
+		"content": {
+			"label": {
+				"en-GB": "Content"
+			},
+			"controls": {
+				"title": {
+					"value": {
+						"en-GB": "Elements"
+					},
+					"label": {
+						"en-GB": "Title"
+					},
+					"control": "core/text"
+				},
+                "standfirst": {
+					"value": {
+						"en-GB": "Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing."
+					},
+					"label": {
+						"en-GB": "Title"
+					},
+					"control": "core/text"
+				},
+                "body": {
+                    "value": [
+						{
+							"title": {
+								"en-GB": "Sem turpis amet semper"
+							},
+							"body": {
+								"en-GB": "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan."
+							}
+						},
+						{
+							"title": {
+								"en-GB": "Magna odio tempus commodo"
+							},
+							"body": {
+								"en-GB": "In arcu accumsan arcu adipiscing acc8umsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent."
+							}
+						},
+						{
+							"title": {
+								"en-GB": "Interdum sapien gravida"
+							},
+							"body": {
+								"en-GB": "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan."
+							}
+						},
+						{
+							"title": {
+								"en-GB": "Faucibus consequat lorem"
+							},
+							"body": {
+								"en-GB": "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan."
+							}
+						},
+						{
+							"title": {
+								"en-GB": "Accumsam montes viverra"
+							},
+							"body": {
+								"en-GB": "Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan."
+							}
+						}
+					],
+					"label": {
+						"en-GB": "Body text"
+					},
+					"controls": {
+						"title": {
+							"hidden": "0",
+							"access": "all",
+							"frontender": "76b5dddf72bee5762ba63d35cebc30d0",
+							"type": "text",
+							"value": "",
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"body": {
+							"hidden": "0",
+							"access": "all",
+							"frontender": "7196f5a43c22eebe68d55bd2d3e67813",
+							"type": "textarea",
+							"value": "",
+							"label": {
+								"en-GB": "Textarea"
+							},
+							"control": "core/textarea"
+						}
+					},
+					"repeatable": true,
+					"type": "compound"
+				}
+			}
+		},
+		"config": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_tag": {
+					"value": "article",
+					"control": "container_tag"
+				},
+				"container_class": {
+					"value": "container",
+					"label": {
+						"en-GB": "Container class"
+					},
+					"control": "core/text"
+				}
+			}
+		}
+	},
+	"containers": []
+}
