@@ -14,16 +14,20 @@
 {% import "macros/template.html.twig" as helper %}
 
 <{{ config.container_tag|default('article') }} class="{{[config.container_class]|join('  |  ') }}" id="article" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
-    <h2>{{ content.title|t }}</h2>
-    <p>{{ content.standfirst|t }}</p>
+    {% if content.title|t %}
+        <h2>{{ content.title|t }}</h2>
+    {% endif %}
+    {% if content.standfirst|t %}
+        <p>{{ content.standfirst|t }}</p>
+    {% endif %}
 
     <div class="row">
         {% for article in content.body|slice(0,2) %}
             <div class="6u 12u$(small)">
-                {% if article.title %}
+                {% if article.title|t %}
                     <h3>{{ article.title|t }}</h3>
                 {% endif %}
-                {% if article.body %}
+                {% if article.body|t %}
                     <p>{{ article.body|t }}</p>
                 {% endif %}
             </div>
@@ -31,10 +35,10 @@
         {# Strip first 2 articles for different layout style #}
         {% for article in content.body|slice(2) %}
             <div class="4u 12u$(medium)">
-                {% if article.title %}
+                {% if article.title|t %}
                     <h3>{{ article.title|t }}</h3>
                 {% endif %}
-                {% if article.body %}
+                {% if article.body|t %}
                     <p>{{ article.body|t }}</p>
                 {% endif %}
             </div>
