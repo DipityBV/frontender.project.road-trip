@@ -1,0 +1,111 @@
+{
+    "frontender": "1558941921",
+	"template": "demo/containers/article/image.html.twig",
+    "name": {
+        "en-GB": "Paragraph with image"
+    },
+    "description": {
+        "en-GB": "Paragraph with configurable image"
+    },
+    "template_config": {
+        "model": {
+			"label": {
+				"en-GB": "Content"
+			},
+			"controls": {
+				"data": {
+					"value": {
+						"adapter": "Unsplash",
+						"model": "Image\\Search",
+						"id": {
+							"en-GB": "XrAsKFIEPvE"
+						}
+					},
+					"label": {
+						"en-GB": "Banner image"
+					},
+					"control": "core/abstract",
+					"type": "lookup",
+					"adapters": [
+						{
+							"value": "Unsplash",
+							"label": "Unsplash",
+							"models": [
+								{
+									"value": "Image\\Search",
+									"label": "Image"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+        "content": {
+			"label": {
+				"en-GB": "Content"
+			},
+			"controls": {
+				"title": {
+					"value": {
+						"en-GB": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+					},
+					"label": {
+						"en-GB": "Title"
+					},
+					"control": "core/text"
+				},
+                "body": {
+					"value": {
+						"en-GB": "Lorem ipsum dolor sit ***accumsan*** interdum nisi, quis _tincidunt_ felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat."
+					},
+					"label": {
+						"en-GB": "Body"
+					},
+					"control": "core/markdown"
+				}
+			}
+		},
+        "config": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_tag": {
+					"value": "article",
+					"control": "container_tag"
+				},
+				"container_class": {
+					"value": "container",
+					"label": {
+						"en-GB": "Container class"
+					},
+					"control": "core/text"
+				},
+                "image_alignment": {
+                    "value": "left",
+                    "label": {
+                        "en-GB": "Image alignment"
+                    },
+                    "options": [
+                        {
+                            "value": "left",
+                            "label": {
+                                "en-GB": "Left"
+                            }
+                        },
+                        {
+                            "value": "right",
+                            "label": {
+                                "en-GB": "Right"
+                            }
+                        }
+                    ],
+                    "type": "list",
+                    "control": "core/abstract"
+                }
+			}
+		}
+    },
+    "containers": []
+}
