@@ -1,0 +1,88 @@
+{
+	"frontender": "1558950597",
+	"template": "demo/containers/gallery/gallery.html.twig",
+	"name": {
+		"en-GB": "Gallery"
+	},
+	"description": {
+		"en-GB": "Gallery container"
+	},
+	"template_config": {
+		"model": {
+			"label": {
+				"en-GB": "Content"
+			},
+			"controls": {
+				"data": {
+					"value": {
+						"adapter": "Unsplash",
+						"model": "Image\\Search",
+						"id": {
+							"en-GB": [
+								"EesJDFNwJFY",
+								"eqXiLNfZDc0",
+								"nfzbUomVuAc",
+								"3lovxIcj6y8",
+								"Xqr87FWe9e0",
+								"7q884uxYVtk"
+							]
+						}
+					},
+					"label": {
+						"en-GB": "Banner image"
+					},
+					"control": "core/abstract",
+					"type": "lookup",
+					"multiple": true,
+					"adapters": [
+						{
+							"value": "Unsplash",
+							"label": "Unsplash",
+							"models": [
+								{
+									"value": "Image\\Search",
+									"label": "Image"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		"content": {
+			"label": {
+				"en-GB": "Content"
+			},
+			"controls": {
+				"title": {
+					"value": {
+						"en-GB": "Gallery"
+					},
+					"label": {
+						"en-GB": "Title"
+					},
+					"control": "core/text"
+				}
+			}
+		},
+		"config": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_tag": {
+					"value": "section",
+					"control": "container_tag"
+				},
+				"container_class": {
+					"value": "container",
+					"label": {
+						"en-GB": "Container class"
+					},
+					"control": "core/text"
+				}
+			}
+		}
+	},
+	"containers": []
+}

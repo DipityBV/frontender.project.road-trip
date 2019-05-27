@@ -4429,3 +4429,16 @@
 			}
 
 		}
+
+/* GetFrontender overrides */
+	.box .row .image.fit {
+		margin: 0;
+		max-height: 300px;
+		overflow: hidden;
+	}
+	.box .row .image.fit img {
+		min-height: 300px;
+	}
+	.box .row .image.fit caption {
+		display: block;
+	}
