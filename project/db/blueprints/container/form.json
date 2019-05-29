@@ -1,0 +1,106 @@
+{
+	"frontender": "1559131001",
+	"template": "demo/containers/form/form.html.twig",
+	"name": {
+		"en-GB": "Form"
+	},
+	"description": {
+		"en-GB": "Form container"
+	},
+	"template_config": {
+		"content": {
+			"label": {
+				"en-GB": "Content"
+			},
+			"controls": {
+				"title": {
+					"value": {
+						"en-GB": "Form"
+					},
+					"label": {
+						"en-GB": "Title"
+					},
+					"control": "core/text"
+				},
+				"select": {
+					"label": {
+						"en-GB": "Select options"
+					},
+					"value": [
+						{
+							"en-GB": "Manufacturing"
+						},
+						{
+							"en-GB": "Shipping"
+						},
+						{
+							"en-GB": "Administration"
+						},
+						{
+							"en-GB": "Human Resources"
+						}
+					],
+					"repeatable": true,
+					"at_least": 1,
+					"at_most": 20,
+					"control": "core/text"
+				},
+				"radio": {
+					"label": {
+						"en-GB": "Radio options"
+					},
+					"value": [
+						{
+							"en-GB": "Please"
+						},
+						{
+							"en-GB": "Select"
+						},
+						{
+							"en-GB": "An option"
+						}
+					],
+					"repeatable": true,
+					"at_least": 1,
+					"at_most": 20,
+					"control": "core/text"
+				},
+				"checkbox": {
+					"label": {
+						"en-GB": "Checkboxes"
+					},
+					"value": [
+						{
+							"en-GB": "Email me a copy of this message"
+						},
+						{
+							"en-GB": "I am a human and not a robot"
+						}
+					],
+					"repeatable": true,
+					"at_least": 1,
+					"at_most": 20,
+					"control": "core/text"
+				}
+			}
+		},
+		"config": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_tag": {
+					"value": "section",
+					"control": "container_tag"
+				},
+				"container_class": {
+					"value": "container",
+					"label": {
+						"en-GB": "Container class"
+					},
+					"control": "core/text"
+				}
+			}
+		}
+	}
+}
