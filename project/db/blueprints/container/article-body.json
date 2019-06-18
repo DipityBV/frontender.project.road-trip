@@ -117,10 +117,15 @@
 				},
 				"container_class": {
 					"value": "container",
-					"label": {
-						"en-GB": "Container class"
-					},
-					"control": "core/text"
+					"control": "project/container_class"
+				},
+				"leader": {
+					"value": "leader",
+					"control": "project/leader"
+				},
+				"trailer": {
+					"value": "trailer",
+					"control": "project/trailer"
 				}
 			}
 		}

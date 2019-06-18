@@ -1,0 +1,21 @@
+{
+    "value": "",
+    "label": {
+        "en-GB": "Leader"
+    },
+    "type": "list",
+    "options": [
+        {
+            "value": "leader",
+            "label": {
+                "en-GB": "Margin top"
+            }
+        },
+        {
+            "value": "leader-inside",
+            "label": {
+                "en-GB": "Padding top"
+            }
+        }
+    ]
+}

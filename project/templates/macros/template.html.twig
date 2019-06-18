@@ -14,7 +14,9 @@
 {# Process any class variables from the config and return a single class string #}
 {% macro class_string(config) %}
     {{ [
-        config.container_class ? config.container_class
+        config.container_class ? config.container_class,
+        config.leader ? config.leader,
+        config.trailer ? config.trailer
     ]|join(' ')|trim }}
 {% endmacro %}
 

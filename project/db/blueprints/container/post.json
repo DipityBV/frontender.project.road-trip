@@ -95,10 +95,7 @@
 			"controls": {
 				"container_class": {
 					"value": "wrapper post bg-img",
-					"label": {
-						"en-GB": "Container class"
-					},
-					"control": "core/text"
+					"control": "project/container_class"
 				}
 			}
 		}

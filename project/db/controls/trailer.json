@@ -1,0 +1,21 @@
+{
+    "value": "",
+    "label": {
+        "en-GB": "Trailer"
+    },
+    "type": "list",
+    "options": [
+        {
+            "value": "trailer",
+            "label": {
+                "en-GB": "Margin bottom"
+            }
+        },
+        {
+            "value": "trailer-inside",
+            "label": {
+                "en-GB": "Padding bottom"
+            }
+        }
+    ]
+}

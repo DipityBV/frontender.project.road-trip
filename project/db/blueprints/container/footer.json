@@ -44,10 +44,7 @@
 				},
                 "container_class": {
                     "value": "",
-                    "label": {
-                        "en-GB": "Container class"
-                    },
-                    "control": "core/text"
+                    "control": "project/container_class"
                 }
             }
         }
