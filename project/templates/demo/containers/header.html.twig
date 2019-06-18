@@ -19,5 +19,15 @@
             <a href="{{ route({'page': content.title.page }) }}">{{ content.title.label|t(locales) }}</a>
         </div>
     {% endif %}
+
+    <!-- Menu toggle -->
     <a href="#menu"><span>Menu</span></a>
+
+    <nav id="menu">
+        <ul class="links">
+            {% for link in content.links %}
+                <li><a href="{{ route({'page': link.page }) }}">{{ link.label|t(locales) }}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
 </{{ config.container_tag|default('header') }}>

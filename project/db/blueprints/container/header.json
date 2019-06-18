@@ -25,7 +25,37 @@
     					"en-GB": "Links"
     				},
     				"control": "core/route"
-                }
+                },
+                "links": {
+    				"value": [
+                        {
+                            "label": {
+                                "en-GB": "Home"
+                            },
+                            "page": "home",
+                            "id": ""
+                        },
+    					{
+    						"label": {
+    							"en-GB": "Demo menu"
+    						},
+    						"page": "/",
+    						"id": ""
+    					},
+    					{
+    						"label": {
+    							"en-GB": "Demo item"
+    						},
+    						"page": "/",
+    						"id": ""
+    					}
+    				],
+    				"label": {
+    					"en-GB": "Menu links"
+    				},
+    				"control": "core/route",
+    				"repeatable": true
+    			}
             }
         },
         "config": {
