@@ -26,14 +26,14 @@
     						"label": {
     							"en-GB": "Demo menu"
     						},
-    						"page": "#",
+    						"page": "/",
     						"id": ""
     					},
     					{
     						"label": {
     							"en-GB": "Demo item"
     						},
-    						"page": "#",
+    						"page": "/",
     						"id": ""
     					}
     				],
@@ -46,23 +46,23 @@
             }
         },
         "config": {
-            "label": {
-                "en-GB": "Settings"
-            },
-            "controls": {
-                "container_tag": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_tag": {
 					"value": "nav",
 					"control": "project/container_tag"
 				},
-                "container_class": {
-                    "value": "",
-                    "label": {
-                        "en-GB": "Container class"
-                    },
-                    "control": "core/text"
-                }
-            }
-        }
+				"container_class": {
+					"value": "",
+					"label": {
+						"en-GB": "Container class"
+					},
+					"control": "core/text"
+				}
+			}
+		}
     },
     "containers": []
 }

@@ -29,23 +29,23 @@
             }
         },
         "config": {
-            "label": {
-                "en-GB": "Settings"
-            },
-            "controls": {
-                "container_tag": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_tag": {
 					"value": "header",
 					"control": "project/container_tag"
 				},
-                "container_class": {
-                    "value": "",
-                    "label": {
-                        "en-GB": "Container class"
-                    },
-                    "control": "core/text"
-                }
-            }
-        }
+				"container_class": {
+					"value": "",
+					"label": {
+						"en-GB": "Container class"
+					},
+					"control": "core/text"
+				}
+			}
+		}
     },
     "containers": []
 }

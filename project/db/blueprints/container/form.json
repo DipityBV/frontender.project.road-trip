@@ -91,7 +91,7 @@
 			"controls": {
 				"container_tag": {
 					"value": "section",
-					"control": "container_tag"
+					"control": "project/container_tag"
 				},
 				"container_class": {
 					"value": "container",
