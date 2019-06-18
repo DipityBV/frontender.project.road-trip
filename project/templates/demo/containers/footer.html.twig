@@ -13,12 +13,11 @@
 
 {% import "macros/template.html.twig" as helper %}
 
-<{{ config.container_tag|default('footer') }} class="{{[config.container_class]|join('  |  ') }}" id="footer" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
+<{{ config.container_tag|default('footer') }} {{ helper.class_attribute(config, ['']|join('  |  ')|trim)|raw }} id="footer" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
     <div class="inner">
-
         <h2>{{ content.title|t(locales) }}</h2>
 
-        <form action="#" method="post">
+        <form>
 
             <div class="field half first">
                 <label for="name">Name</label>
@@ -46,6 +45,5 @@
         <div class="copyright">
             {{ content.copyright|t(locales) }} <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
         </div>
-
     </div>
 </{{ config.container_tag|default('footer') }}>

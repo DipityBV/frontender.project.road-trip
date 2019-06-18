@@ -19,7 +19,7 @@
     the background image.
 -->
 
-<{{ config.container_tag|default('section') }} class="{{[config.container_class]|join('  |  ') }}" data-bg="{{ model.urls.regular }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
+<{{ config.container_tag|default('section') }} {{ helper.class_attribute(config, ['']|join('  |  ')|trim)|raw }} data-bg="{{ model.urls.regular }}" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
     <div class="inner">
         <article class="box">
             {% if content.title|t(locales) %}

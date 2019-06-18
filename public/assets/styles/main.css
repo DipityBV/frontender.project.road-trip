@@ -4442,6 +4442,9 @@
 	.box .row .image.fit caption {
 		display: block;
 	}
+	.post {
+		height: auto;
+	}
 	.leader {
 		margin-top: 30px;
 	}
