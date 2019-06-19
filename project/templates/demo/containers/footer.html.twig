@@ -42,7 +42,13 @@
         </ul>
 
         <div class="copyright">
-            {{ content.copyright|t(locales) }} <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+            <div class="footer__accreditation accreditation">
+                <p class="accreditation__copyright"><small>Images supplied by <a href="https://unsplash.com">Unsplash</a>. Template by <a href="https://templated.co">TEMPLATED</a></small></p><!--
+                --><p class="accreditation__attribution">
+                    <img class="attribution__brand" src="https://development.getfrontender.brickson.kitchen.local/assets/images/brand/f-dot-framed-theme.png">
+                    <small>Made with Frontender</small>
+                </p>
+            </div>
         </div>
     </div>
 </{{ config.container_tag|default('footer') }}>

@@ -4442,9 +4442,11 @@
 	.box .row .image.fit caption {
 		display: block;
 	}
+
 	.post {
 		height: auto;
 	}
+
 	.leader {
 		margin-top: 75px;
 	}
@@ -4456,4 +4458,34 @@
 	}
 	.trailer-inside {
 		padding-bottom: 75px;
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.accreditation {
+		position: relative;
+		padding: 1em 0 1.5em;
+		color: #fff;
+		border-top: thin solid;
+    	border-color: rgba(255, 255, 255, .26);
+	}
+	.accreditation__attribution,
+	.accreditation__copyright {
+		position: relative;
+		display: inline-block;
+		width: 50%;
+	}
+	.accreditation__attribution {
+		text-align: right;
+	}
+	.accreditation__copyright {
+		text-align: left
+	}
+	.attribution__brand {
+		height: 1em;
+		padding-right: .5em;
 	}
