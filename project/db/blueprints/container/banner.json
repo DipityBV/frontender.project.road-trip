@@ -54,6 +54,15 @@
 						"en-GB": "Title"
 					},
 					"control": "core/text"
+				},
+				"subtitle": {
+					"value": {
+						"en-GB": ""
+					},
+					"label": {
+						"en-GB": "Subtitle"
+					},
+					"control": "core/text"
 				}
 			}
 		},

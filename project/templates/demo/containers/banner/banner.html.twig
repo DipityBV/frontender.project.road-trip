@@ -24,6 +24,12 @@
             <header>
                 <h1>{{ content.title|t(locales) }}</h1>
             </header>
+            {% if content.subtitle|t(locales) %}
+                <p>
+                    <img class="attribution__brand" src="https://development.getfrontender.brickson.kitchen.local/assets/images/brand/f-dot-framed-theme.png">
+                    <small class="attribution__slogan">{{ content.subtitle|t(locales) }}</small>
+                </p>
+            {% endif %}
         </div>
     {% endif %}
 </{{ config.container_tag|default('section') }}>

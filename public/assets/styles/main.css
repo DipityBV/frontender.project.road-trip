@@ -4489,3 +4489,36 @@
 		height: 1em;
 		padding-right: .5em;
 	}
+	#banner .attribution__brand,
+	#banner .attribution__slogan {
+		vertical-align: middle;
+	}
+
+	.cake, .cake__blue, .cake__teal, .cake__frosting,
+	.cake h1, h2, h3, h4, h5, h6,
+	.cake__blue h1, h2, h3, h4, h5, h6,
+	.cake__teal h1, h2, h3, h4, h5, h6,
+	.cake__frosting h1, h2, h3, h4, h5, h6 {
+		color: rgba(0, 0, 0, .86);
+	}
+
+	.cake {
+		background: #FFE550;
+	}
+	.cake__blue {
+		background: #B2E1F9;
+	}
+	.cake__teal {
+		background: #6AD9CB;
+	}
+	.cake__frosting {
+		background: #fff;
+	}
+
+	.post .box .content {
+		color: #fff;
+	}
+
+	.row > * {
+		padding: 2em;
+	}
