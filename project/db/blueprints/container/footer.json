@@ -21,15 +21,6 @@
                         "en-GB": "Title"
                     },
                     "control": "core/text"
-                },
-                "copyright": {
-                    "value": {
-                        "en-GB": "Feel free to copy and use this template."
-                    },
-                    "label": {
-                        "en-GB": "Lead paragraph"
-                    },
-                    "control": "core/textarea"
                 }
             }
         },
