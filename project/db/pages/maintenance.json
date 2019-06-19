@@ -63,11 +63,40 @@
 			"controls": {
 				"container_class": {
 					"value": "",
+					"core": "project/container_class"
+				},
+				"cupcake": {
 					"label": {
-						"en-GB": "Body class"
+						"en-GB": "Background colour"
 					},
-					"core": "core/text",
-					"type": "hidden"
+					"value": "",
+					"type": "list",
+					"options": [
+						{
+							"value": "cake",
+							"label": {
+								"en-GB": "Yellow frosting"
+							}
+						},
+						{
+							"value": "cake__teal",
+							"label": {
+								"en-GB": "Teal frosting"
+							}
+						},
+						{
+							"value": "cake__blue",
+							"label": {
+								"en-GB": "Blue frosting"
+							}
+						},
+						{
+							"value": "cake__frosting",
+							"label": {
+								"en-GB": "White frosting"
+							}
+						}
+					]
 				}
 			}
 		}
