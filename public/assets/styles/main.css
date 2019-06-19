@@ -4446,14 +4446,14 @@
 		height: auto;
 	}
 	.leader {
-		margin-top: 30px;
+		margin-top: 75px;
 	}
 	.leader-inside {
-		padding-top: 30px;
+		padding-top: 75px;
 	}
 	.trailer {
-		margin-bottom: 30px;
+		margin-bottom: 75px;
 	}
 	.trailer-inside {
-		padding-bottom: 30px;
+		padding-bottom: 75px;
 	}
