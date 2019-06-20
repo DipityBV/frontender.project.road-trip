@@ -28,7 +28,6 @@
             <li><a href="{{ route({'page': '/' }) }}">Home</a></li>
             <li><a href="{{ route({'page': '/how-frontender-works' }) }}">How it works</a></li>
             <li><a href="https://docs.getfrontender.com" target="_blank">Documentation</a></li>
-            <li><a href="https://my.getfrontender.com" target="_blank">Login</a></li>
             {% for link in content.links %}
                 <li><a href="{{ route({'page': link.page }) }}">{{ link.label|t(locales) }}</a></li>
             {% endfor %}

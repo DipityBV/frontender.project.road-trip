@@ -4468,7 +4468,7 @@
 
 	.accreditation {
 		position: relative;
-		padding: 1em 0 1.5em;
+		padding: 3em 0 1.5em;
 		color: #fff;
 		border-top: thin solid;
     	border-color: rgba(255, 255, 255, .26);
@@ -4515,10 +4515,63 @@
 		background: #fff;
 	}
 
+	.cake #menu {
+		background: #FFC750;
+	}
+	.cake__blue #menu {
+		background: #89C5F1;
+	}
+	.cake__teal #menu {
+		background: #6AD9CB;
+	}
+
+	.cake #footer {
+		background: #FFC750;
+	}
+	.cake__blue #footer {
+		background: #89C5F1;
+	}
+	.cake__teal #footer {
+		background: #6AD9CB;
+	}
+
+	#footer ::-webkit-input-placeholder {
+		color: #fff !important;
+	}
+
+	#footer :-moz-placeholder {
+		color: #fff !important;
+	}
+
+	#footer ::-moz-placeholder {
+		color: #fff !important;
+	}
+
+	#footer :-ms-input-placeholder {
+		color: #fff !important;
+	}
+
+	#footer .formerize-placeholder {
+		color: #fff !important;
+	}
+
+	.cake__frosting #header > a[href="#menu"] {
+		background: rgba(0, 0, 0, .15);
+	}
+
 	.post .box .content {
 		color: #fff;
 	}
 
 	.row > * {
 		padding: 2em;
+		min-height: 400px;
+	}
+
+	#footer .copyright {
+		margin: 6em 0 2em 0;
+	}
+
+	#menu .close {
+		color: #fff;
 	}
