@@ -32,6 +32,8 @@
                 {% endif %}
             </div>
         {% endfor %}
+    </div>
+    <div class="row">
         {# Strip first 2 articles for different layout style #}
         {% for article in content.body|slice(2) %}
             <div class="4u 12u$(medium)">
