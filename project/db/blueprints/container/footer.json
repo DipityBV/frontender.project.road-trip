@@ -21,6 +21,119 @@
                         "en-GB": "Title"
                     },
                     "control": "core/text"
+                },
+                "icons": {
+                    "value": [
+                        {
+                            "icon": "fa-twitter",
+                            "icon_size": "round",
+                            "page": {
+                                "en-GB": "https://twitter.com/bricksonomy"
+                            },
+                            "label": {
+                                "en-GB": "Twitter"
+                            }
+                        },
+                        {
+                            "icon": "fa-github",
+                            "icon_size": "round",
+                            "page": {
+                                "en-GB": "https://github.com/getfrontender"
+                            },
+                            "label": {
+                                "en-GB": "Github"
+                            }
+                        }
+                    ],
+                    "label": {
+                        "en-GB": "Icon buttons"
+                    },
+                    "controls": {
+                        "icon": {
+                            "type": "list",
+                            "options": [
+                                {
+                                    "value": "fa-facebook",
+                                    "label": {
+                                        "en-GB": "Facebook"
+                                    }
+                                },
+                                {
+                                    "value": "fa-twitter",
+                                    "label": {
+                                        "en-GB": "Twitter"
+                                    }
+                                },
+                                {
+                                    "value": "fa-instagram",
+                                    "label": {
+                                        "en-GB": "Instagram"
+                                    }
+                                },
+                                {
+                                    "value": "fa-github",
+                                    "label": {
+                                        "en-GB": "Github"
+                                    }
+                                },
+                                {
+                                    "value": "fa-linkedin",
+                                    "label": {
+                                        "en-GB": "LinkedIn"
+                                    }
+                                },
+                                {
+                                    "value": "fa-share",
+                                    "label": {
+                                        "en-GB": "External link"
+                                    }
+                                }
+                            ],
+                            "label": {
+                                "en-GB": "Icon"
+                            },
+                            "value": ""
+                        },
+                        "icon_size": {
+                            "type": "list",
+                            "options": [
+                                {
+                                    "value": "round",
+                                    "label": {
+                                        "en-GB": "Large"
+                                    }
+                                },
+                                {
+                                    "value": "",
+                                    "label": {
+                                        "en-GB": "Small"
+                                    }
+                                }
+                            ],
+                            "label": {
+                                "en-GB": "Icon size"
+                            },
+                            "value": "round"
+                        },
+                        "page": {
+                            "type": "text",
+							"value": "",
+							"label": {
+								"en-GB": "Button link"
+							},
+							"control": "core/text"
+                        },
+                        "label": {
+                            "type": "text",
+							"value": "",
+							"label": {
+								"en-GB": "Button label"
+							},
+							"control": "core/text"
+                        }
+                    },
+                    "repeatable": true,
+					"type": "compound"
                 }
             }
         },

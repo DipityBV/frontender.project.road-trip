@@ -36,9 +36,15 @@
         </form>
 
         <ul class="icons">
-            <li><a href="https://twitter.com/@bricksonomy" target="_blank" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
-            <li><a href="#" target="_blank" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
-            <li><a href="#" target="_blank" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+            {% for icon in content.icons %}
+                <li>
+                    <a href="{{ icon.page|t }}" target="_blank" class="icon {{ icon.icon_size }} {{ icon.icon }}">
+                        {% if icon.label|t %}
+                            <span class="label">{{ icon.label|t }}</span>
+                        {% endif %}
+                    </a>
+                </li>
+            {% endfor %}
         </ul>
 
         <div class="copyright">
