@@ -22,19 +22,12 @@
 						"id": ""
 					},
     				"label": {
-    					"en-GB": "Links"
+    					"en-GB": "Title"
     				},
     				"control": "core/route"
                 },
                 "links": {
     				"value": [
-                        {
-                            "label": {
-                                "en-GB": "Home"
-                            },
-                            "page": "home",
-                            "id": ""
-                        },
     					{
     						"label": {
     							"en-GB": "Demo menu"

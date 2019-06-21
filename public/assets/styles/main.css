@@ -4495,10 +4495,10 @@
 	}
 
 	.cake, .cake__blue, .cake__teal, .cake__frosting,
-	.cake h1, h2, h3, h4, h5, h6,
-	.cake__blue h1, h2, h3, h4, h5, h6,
-	.cake__teal h1, h2, h3, h4, h5, h6,
-	.cake__frosting h1, h2, h3, h4, h5, h6 {
+	.cake h1, .cake h2, .cake h3, .cake h4, .cake h5, .cake h6,
+	.cake__blue h1, .cake__blue h2, .cake__blue h3, .cake__blue h4, .cake__blue h5, .cake__blue h6,
+	.cake__teal h1, .cake__teal h2, .cake__teal h3, .cake__teal h4, .cake__teal h5, .cake__teal h6,
+	.cake__frosting h1, .cake__frosting h2, .cake__frosting h3, .cake__frosting h4, .cake__frosting h5, .cake__frosting h6 {
 		color: rgba(0, 0, 0, .86);
 	}
 
@@ -4535,23 +4535,12 @@
 		background: #6AD9CB;
 	}
 
-	#footer ::-webkit-input-placeholder {
-		color: #fff !important;
-	}
-
-	#footer :-moz-placeholder {
-		color: #fff !important;
-	}
-
+	/* Override previous important statements */
+	#footer ::-webkit-input-placeholder,
+	#footer .formerize-placeholder,
+	#footer :-ms-input-placeholder,
+	#footer :-moz-placeholder,
 	#footer ::-moz-placeholder {
-		color: #fff !important;
-	}
-
-	#footer :-ms-input-placeholder {
-		color: #fff !important;
-	}
-
-	#footer .formerize-placeholder {
 		color: #fff !important;
 	}
 
@@ -4559,7 +4548,13 @@
 		background: rgba(0, 0, 0, .15);
 	}
 
-	.post .box .content {
+	.cake__frosting #header > a[href="#menu"]:hover {
+		color: #fff;
+		background: rgba(0, 0, 0, .3);
+	}
+
+	.post .box .content,
+	.post .box h1, .post .box h2, .post .box h3, .post .box h4, .post .box h5, .post .box h6  {
 		color: #fff;
 	}
 
