@@ -4558,6 +4558,10 @@
 		color: #fff;
 	}
 
+	#article strong, #article b, #article table th {
+		color: inherit;
+	}
+
 	.row > * {
 		padding: 2em;
 		min-height: 400px;
