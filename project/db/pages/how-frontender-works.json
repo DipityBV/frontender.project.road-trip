@@ -62,8 +62,10 @@
 			"controls": {
 				"container_class": {
 					"value": "",
-					"core": "project/container_class",
-					"type": "hidden"
+					"label": {
+						"en-GB": "Body class"
+					},
+					"core": "project/container_class"
 				},
 				"cupcake": {
 					"label": {

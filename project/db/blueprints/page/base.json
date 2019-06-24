@@ -65,6 +65,9 @@
 			"controls": {
 				"container_class": {
 					"value": "",
+					"label": {
+						"en-GB": "Body class"
+					},
 					"core": "project/container_class"
 				},
 				"cupcake": {
