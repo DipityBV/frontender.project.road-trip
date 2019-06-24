@@ -4552,6 +4552,13 @@
 		color: #fff;
 		background: rgba(0, 0, 0, .3);
 	}
+	.cake__frosting #header .logo a {
+		color: black;
+	}
+	.cake__frosting #header .logo a:hover {
+		color: rgba(0, 0, 0, .6);
+	}
+
 
 	.post .box .content,
 	.post .box h1, .post .box h2, .post .box h3, .post .box h4, .post .box h5, .post .box h6  {
