@@ -103,6 +103,77 @@
 	},
 	"containers": [
 		{
+		    "frontender": "1557733870",
+		    "template": "demo/containers/header.html.twig",
+		    "name": {
+		        "en-GB": "Header"
+		    },
+		    "description": {
+		        "en-GB": "Simple header container"
+		    },
+		    "template_config": {
+		        "content": {
+		            "label": {
+		                "en-GB": "Content"
+		            },
+		            "controls": {
+		                "title": {
+		                    "value": {
+								"label": {
+									"en-GB": "Road trip by TEMPLATED"
+								},
+								"page": "",
+								"id": ""
+							},
+		    				"label": {
+		    					"en-GB": "Title"
+		    				},
+		    				"control": "core/route"
+		                },
+		                "links": {
+		    				"value": [
+		    					{
+		    						"label": {
+		    							"en-GB": "Demo menu"
+		    						},
+		    						"page": "/",
+		    						"id": ""
+		    					},
+		    					{
+		    						"label": {
+		    							"en-GB": "Demo item"
+		    						},
+		    						"page": "/",
+		    						"id": ""
+		    					}
+		    				],
+		    				"label": {
+		    					"en-GB": "Menu links"
+		    				},
+		    				"control": "core/route",
+		    				"repeatable": true
+		    			}
+		            }
+		        },
+		        "config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "header",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"control": "project/container_class"
+						}
+					}
+				}
+		    },
+		    "containers": []
+		},
+		{
 			"frontender": "94aa5be37dc7e3ca9be7cd10e156965b",
 			"template": "demo/containers/banner/banner.html.twig",
 			"name": {
@@ -194,125 +265,6 @@
 				}
 			},
 			"containers": []
-		},
-		{
-			"frontender": "3cdc6c163591b1cb65fa6c43ce3c7765",
-			"template": "demo/containers/header.html.twig",
-			"name": {
-				"en-GB": "Header"
-			},
-			"description": {
-				"en-GB": "Simple header container"
-			},
-			"template_config": {
-				"content": {
-					"label": {
-						"en-GB": "Content"
-					},
-					"controls": {
-						"title": {
-							"value": {
-								"label": {
-									"en-GB": "Road trip by TEMPLATED"
-								},
-								"page": "",
-								"id": ""
-							},
-							"label": {
-								"en-GB": "Links"
-							},
-							"control": "core/route"
-						}
-					}
-				},
-				"config": {
-					"label": {
-						"en-GB": "Settings"
-					},
-					"controls": {
-						"container_tag": {
-							"value": "header",
-							"control": "container_tag"
-						},
-						"container_class": {
-							"value": "",
-							"label": {
-								"en-GB": "Container class"
-							},
-							"control": "core/text"
-						}
-					}
-				}
-			},
-			"containers": []
-		},
-		{
-		    "frontender": "1557733871",
-		    "template": "demo/containers/navigation/navigation.html.twig",
-		    "name": {
-		        "en-GB": "Navigation"
-		    },
-		    "description": {
-		        "en-GB": "Simple navigation container"
-		    },
-		    "template_config": {
-		        "content": {
-		            "label": {
-		                "en-GB": "Content"
-		            },
-		            "controls": {
-		                "links": {
-		    				"value": [
-		    					{
-		    						"label": {
-		    							"en-GB": "Home"
-		    						},
-		    						"page": "home",
-		    						"id": ""
-		    					},
-		    					{
-		    						"label": {
-		    							"en-GB": "Demo menu"
-		    						},
-		    						"page": "#",
-		    						"id": ""
-		    					},
-		    					{
-		    						"label": {
-		    							"en-GB": "Demo item"
-		    						},
-		    						"page": "#",
-		    						"id": ""
-		    					}
-		    				],
-		    				"label": {
-		    					"en-GB": "Links"
-		    				},
-		    				"control": "core/route",
-		    				"repeatable": true
-		    			}
-		            }
-		        },
-		        "config": {
-		            "label": {
-		                "en-GB": "Settings"
-		            },
-		            "controls": {
-		                "container_tag": {
-							"value": "nav",
-							"control": "project/container_tag"
-						},
-		                "container_class": {
-		                    "value": "",
-		                    "label": {
-		                        "en-GB": "Container class"
-		                    },
-		                    "control": "core/text"
-		                }
-		            }
-		        }
-		    },
-		    "containers": []
 		},
 		{
 			"frontender": "2be21712922b2d4473ce6bec2de81d4f",

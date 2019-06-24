@@ -103,13 +103,13 @@
 	},
 	"containers": [
 		{
-		    "frontender": "1557733871",
-		    "template": "demo/containers/navigation/navigation.html.twig",
+		    "frontender": "1557733870",
+		    "template": "demo/containers/header.html.twig",
 		    "name": {
-		        "en-GB": "Navigation"
+		        "en-GB": "Header"
 		    },
 		    "description": {
-		        "en-GB": "Simple navigation container"
+		        "en-GB": "Simple header container"
 		    },
 		    "template_config": {
 		        "content": {
@@ -117,32 +117,38 @@
 		                "en-GB": "Content"
 		            },
 		            "controls": {
+		                "title": {
+		                    "value": {
+								"label": {
+									"en-GB": "Road trip by TEMPLATED"
+								},
+								"page": "",
+								"id": ""
+							},
+		    				"label": {
+		    					"en-GB": "Title"
+		    				},
+		    				"control": "core/route"
+		                },
 		                "links": {
 		    				"value": [
 		    					{
 		    						"label": {
-		    							"en-GB": "Home"
-		    						},
-		    						"page": "home",
-		    						"id": ""
-		    					},
-		    					{
-		    						"label": {
 		    							"en-GB": "Demo menu"
 		    						},
-		    						"page": "#",
+		    						"page": "/",
 		    						"id": ""
 		    					},
 		    					{
 		    						"label": {
 		    							"en-GB": "Demo item"
 		    						},
-		    						"page": "#",
+		    						"page": "/",
 		    						"id": ""
 		    					}
 		    				],
 		    				"label": {
-		    					"en-GB": "Links"
+		    					"en-GB": "Menu links"
 		    				},
 		    				"control": "core/route",
 		    				"repeatable": true
@@ -150,23 +156,20 @@
 		            }
 		        },
 		        "config": {
-		            "label": {
-		                "en-GB": "Settings"
-		            },
-		            "controls": {
-		                "container_tag": {
-							"value": "nav",
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "header",
 							"control": "project/container_tag"
 						},
-		                "container_class": {
-		                    "value": "",
-		                    "label": {
-		                        "en-GB": "Container class"
-		                    },
-		                    "control": "core/text"
-		                }
-		            }
-		        }
+						"container_class": {
+							"value": "",
+							"control": "project/container_class"
+						}
+					}
+				}
 		    },
 		    "containers": []
 		},
@@ -253,57 +256,6 @@
 						},
 						"container_class": {
 							"value": "bg-img",
-							"label": {
-								"en-GB": "Container class"
-							},
-							"control": "core/text"
-						}
-					}
-				}
-			},
-			"containers": []
-		},
-		{
-			"frontender": "fe7b3aebaeb31c201a4f0bf89417b6c7",
-			"template": "demo/containers/header.html.twig",
-			"name": {
-				"en-GB": "Header"
-			},
-			"description": {
-				"en-GB": "Simple header container"
-			},
-			"template_config": {
-				"content": {
-					"label": {
-						"en-GB": "Content"
-					},
-					"controls": {
-						"title": {
-							"value": {
-								"label": {
-									"en-GB": "Road trip by TEMPLATED"
-								},
-								"page": "",
-								"id": ""
-							},
-							"label": {
-								"en-GB": "Links"
-							},
-							"control": "core/route"
-						}
-					}
-				},
-				"config": {
-					"label": {
-						"en-GB": "Settings"
-					},
-					"controls": {
-						"container_tag": {
-							"value": "header",
-							"control": "container_tag"
-						},
-						"container_class": {
-							"value": "",
 							"label": {
 								"en-GB": "Container class"
 							},
