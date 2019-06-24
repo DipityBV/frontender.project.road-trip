@@ -92,7 +92,7 @@
                             "label": {
                                 "en-GB": "Icon"
                             },
-                            "value": ""
+                            "value": "fa-share"
                         },
                         "icon_size": {
                             "type": "list",
