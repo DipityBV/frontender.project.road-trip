@@ -4558,13 +4558,26 @@
 		color: #fff;
 	}
 
-	#article strong, #article b, #article table th {
+	#article strong, #article b, #article table th,
+	#form input[type="checkbox"] + label, #form input[type="radio"] + label {
 		color: inherit;
 	}
 
-	.row > * {
+	#article .row > * {
 		padding: 2em;
 		min-height: 400px;
+	}
+
+	.cake__frosting #form ::placeholder,
+	.cake #form ::placeholder {
+		color: black !important;
+	}
+	#form input[type="reset"].alt {
+		color: rgba(144, 144, 144, .5) !important;
+	}
+	#form textarea#message {
+		resize: vertical;
+		min-height: 50px;
 	}
 
 	#footer .copyright {
