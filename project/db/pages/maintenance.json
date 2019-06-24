@@ -1,10 +1,9 @@
 {
-	"route": "maintenance",
-	"frontender": "1556281216",
-	"template": "demo/layouts/default.html.twig",
-	"name": {
-		"en-GB": "Maintenance page"
+	"route": {
+		"en-GB": "offline"
 	},
+	"frontender": "3924c543907cc3ec8832d84a50ccece5",
+	"template": "demo/layouts/default.html.twig",
 	"description": {
 		"en-GB": "When the website is offline, this page is served."
 	},
@@ -16,7 +15,7 @@
 			"controls": {
 				"title": {
 					"value": {
-						"en-GB": "Demo – A skeleton project for Frontender"
+						"en-GB": ""
 					},
 					"label": {
 						"en-GB": "Page title"
@@ -26,7 +25,7 @@
 				},
 				"meta_description": {
 					"value": {
-						"en-GB": "Demo – A skeleton project for Frontender"
+						"en-GB": ""
 					},
 					"label": {
 						"en-GB": "Serp Description"
@@ -45,7 +44,7 @@
 					"type": "textarea"
 				},
 				"meta_robots": {
-					"value": "noindex, nofollow",
+					"value": "index, follow",
 					"label": {
 						"en-GB": "Indexing"
 					},
@@ -63,99 +62,70 @@
 			"controls": {
 				"container_class": {
 					"value": "",
-					"core": "project/container_class"
-				},
-				"cupcake": {
 					"label": {
-						"en-GB": "Background colour"
+						"en-GB": "Body class"
 					},
-					"value": "",
-					"type": "list",
-					"options": [
-						{
-							"value": "cake",
-							"label": {
-								"en-GB": "Yellow frosting"
-							}
-						},
-						{
-							"value": "cake__teal",
-							"label": {
-								"en-GB": "Teal frosting"
-							}
-						},
-						{
-							"value": "cake__blue",
-							"label": {
-								"en-GB": "Blue frosting"
-							}
-						},
-						{
-							"value": "cake__frosting",
-							"label": {
-								"en-GB": "White frosting"
-							}
-						}
-					]
+					"core": "core/text",
+					"type": "hidden"
 				}
 			}
 		}
 	},
 	"containers": [
 		{
-		    "frontender": "1557733870",
-		    "template": "demo/containers/header.html.twig",
-		    "name": {
-		        "en-GB": "Header"
-		    },
-		    "description": {
-		        "en-GB": "Simple header container"
-		    },
-		    "template_config": {
-		        "content": {
-		            "label": {
-		                "en-GB": "Content"
-		            },
-		            "controls": {
-		                "title": {
-		                    "value": {
+			"frontender": "b8e232537e33ee8b7732ac377c35a397",
+			"template": "demo/containers/header.html.twig",
+			"name": {
+				"en-GB": "Header"
+			},
+			"description": {
+				"en-GB": "Simple header container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
 								"label": {
-									"en-GB": "Road trip by TEMPLATED"
+									"en-GB": ""
 								},
 								"page": "",
 								"id": ""
 							},
-		    				"label": {
-		    					"en-GB": "Title"
-		    				},
-		    				"control": "core/route"
-		                },
-		                "links": {
-		    				"value": [
-		    					{
-		    						"label": {
-		    							"en-GB": "Demo menu"
-		    						},
-		    						"page": "/",
-		    						"id": ""
-		    					},
-		    					{
-		    						"label": {
-		    							"en-GB": "Demo item"
-		    						},
-		    						"page": "/",
-		    						"id": ""
-		    					}
-		    				],
-		    				"label": {
-		    					"en-GB": "Menu links"
-		    				},
-		    				"control": "core/route",
-		    				"repeatable": true
-		    			}
-		            }
-		        },
-		        "config": {
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/route"
+						},
+						"links": {
+							"value": [
+								{
+									"label": {
+										"en-GB": "Demo menu"
+									},
+									"page": "/",
+									"id": ""
+								},
+								{
+									"label": {
+										"en-GB": "Demo item"
+									},
+									"page": "/",
+									"id": ""
+								}
+							],
+							"label": {
+								"en-GB": "Menu links"
+							},
+							"control": "core/route",
+							"repeatable": true
+						}
+					}
+				},
+				"config": {
 					"label": {
 						"en-GB": "Settings"
 					},
@@ -170,11 +140,12 @@
 						}
 					}
 				}
-		    },
-		    "containers": []
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2ad7"
 		},
 		{
-			"frontender": "94aa5be37dc7e3ca9be7cd10e156965b",
+			"frontender": "49f1074c54deea84b85be546055f6528",
 			"template": "demo/containers/banner/banner.html.twig",
 			"name": {
 				"en-GB": "Banner"
@@ -229,19 +200,6 @@
 								"en-GB": "Title"
 							},
 							"control": "core/text"
-						},
-						"button": {
-							"value": {
-								"label": {
-									"en-GB": "Learn more"
-								},
-								"page": "",
-								"id": ""
-							},
-							"label": {
-								"en-GB": "Button"
-							},
-							"control": "core/route"
 						}
 					}
 				},
@@ -252,22 +210,20 @@
 					"controls": {
 						"container_tag": {
 							"value": "section",
-							"control": "container_tag"
+							"control": "project/container_tag"
 						},
 						"container_class": {
 							"value": "bg-img",
-							"label": {
-								"en-GB": "Container class"
-							},
-							"control": "core/text"
+							"control": "project/container_class"
 						}
 					}
 				}
 			},
-			"containers": []
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2adb"
 		},
 		{
-			"frontender": "2be21712922b2d4473ce6bec2de81d4f",
+			"frontender": "3d4d1555c436dab6220a7b8cf70c1408",
 			"template": "demo/containers/footer.html.twig",
 			"name": {
 				"en-GB": "Footer"
@@ -290,14 +246,118 @@
 							},
 							"control": "core/text"
 						},
-						"copyright": {
-							"value": {
-								"en-GB": "Feel free to copy and use this template."
-							},
+						"icons": {
+							"value": [
+								{
+									"icon": "fa-twitter",
+									"icon_size": "round",
+									"page": {
+										"en-GB": "https://twitter.com/bricksonomy"
+									},
+									"label": {
+										"en-GB": "Twitter"
+									}
+								},
+								{
+									"icon": "fa-github",
+									"icon_size": "round",
+									"page": {
+										"en-GB": "https://github.com/getfrontender"
+									},
+									"label": {
+										"en-GB": "Github"
+									}
+								}
+							],
 							"label": {
-								"en-GB": "Lead paragraph"
+								"en-GB": "Icon buttons"
 							},
-							"control": "core/textarea"
+							"controls": {
+								"icon": {
+									"type": "list",
+									"options": [
+										{
+											"value": "fa-facebook",
+											"label": {
+												"en-GB": "Facebook"
+											}
+										},
+										{
+											"value": "fa-twitter",
+											"label": {
+												"en-GB": "Twitter"
+											}
+										},
+										{
+											"value": "fa-instagram",
+											"label": {
+												"en-GB": "Instagram"
+											}
+										},
+										{
+											"value": "fa-github",
+											"label": {
+												"en-GB": "Github"
+											}
+										},
+										{
+											"value": "fa-linkedin",
+											"label": {
+												"en-GB": "LinkedIn"
+											}
+										},
+										{
+											"value": "fa-share",
+											"label": {
+												"en-GB": "External link"
+											}
+										}
+									],
+									"label": {
+										"en-GB": "Icon"
+									},
+									"value": ""
+								},
+								"icon_size": {
+									"type": "list",
+									"options": [
+										{
+											"value": "round",
+											"label": {
+												"en-GB": "Large"
+											}
+										},
+										{
+											"value": "",
+											"label": {
+												"en-GB": "Small"
+											}
+										}
+									],
+									"label": {
+										"en-GB": "Icon size"
+									},
+									"value": "round"
+								},
+								"page": {
+									"type": "text",
+									"value": "",
+									"label": {
+										"en-GB": "Button link"
+									},
+									"control": "core/text"
+								},
+								"label": {
+									"type": "text",
+									"value": "",
+									"label": {
+										"en-GB": "Button label"
+									},
+									"control": "core/text"
+								}
+							},
+							"repeatable": true,
+							"type": "compound"
 						}
 					}
 				},
@@ -308,19 +368,20 @@
 					"controls": {
 						"container_tag": {
 							"value": "footer",
-							"control": "container_tag"
+							"control": "project/container_tag"
 						},
 						"container_class": {
 							"value": "",
-							"label": {
-								"en-GB": "Container class"
-							},
-							"control": "core/text"
+							"control": "project/container_class"
 						}
 					}
 				}
 			},
-			"containers": []
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2ad9"
 		}
-	]
+	],
+	"name": {
+		"en-GB": "Maintenance"
+	}
 }

@@ -1,11 +1,11 @@
 {
 	"route": {
-		"en-GB": "404"
+		"en-GB": "documentation"
 	},
-	"frontender": "b3cc38dea4987fe0600a83833c64723b",
+	"frontender": "b66109ff1c6440df30e0bc439ea4b968",
 	"template": "demo/layouts/default.html.twig",
 	"description": {
-		"en-GB": "The page is shown when a non-existing resource is requested."
+		"en-GB": "Documentation page blueprint."
 	},
 	"page_config": {
 		"seo": {
@@ -73,7 +73,7 @@
 	},
 	"containers": [
 		{
-			"frontender": "3314670e1ed1c338c08594c5b2a0bef5",
+			"frontender": "c84995ed14ef05ef0e584b56838fdb55",
 			"template": "demo/containers/header.html.twig",
 			"name": {
 				"en-GB": "Header"
@@ -145,13 +145,13 @@
 			"blueprint": "5ce7eb30f7269c8d544f2ad7"
 		},
 		{
-			"frontender": "72256b2833dff02b7bb31268e840a4cd",
-			"template": "demo/containers/banner/banner.html.twig",
+			"frontender": "f636ee43f18745be7afe4fe4e17e12e0",
+			"template": "demo/containers/post/post.html.twig",
 			"name": {
-				"en-GB": "Banner"
+				"en-GB": "Post"
 			},
 			"description": {
-				"en-GB": "Banner container"
+				"en-GB": "Simple post container"
 			},
 			"template_config": {
 				"model": {
@@ -164,7 +164,7 @@
 								"adapter": "Unsplash",
 								"model": "Image\\Search",
 								"id": {
-									"en-GB": "dJdcb11aboQ"
+									"en-GB": "sl7jqLgd7lo"
 								}
 							},
 							"label": {
@@ -194,12 +194,43 @@
 					"controls": {
 						"title": {
 							"value": {
-								"en-GB": "404"
+								"en-GB": "Read the documentation"
 							},
 							"label": {
 								"en-GB": "Title"
 							},
 							"control": "core/text"
+						},
+						"body": {
+							"value": {
+								"en-GB": "Jelly beans macaroon soufflé lemon drops brownie. Gingerbread chupa chups chupa chups lemon drops cupcake cookie. Powder tiramisu oat cake pudding tootsie roll dessert bear claw tiramisu pie. Tootsie roll jujubes pastry cake cookie gummi bears muffin bear claw caramels. Marzipan candy canes pie fruitcake bear claw tiramisu cotton candy gingerbread. Tiramisu toffee cotton candy gingerbread."
+							},
+							"label": {
+								"en-GB": "Post body"
+							},
+							"control": "core/markdown"
+						},
+						"date": {
+							"value": {
+								"en-GB": ""
+							},
+							"label": {
+								"en-GB": "Date"
+							},
+							"control": "core/text"
+						},
+						"button": {
+							"value": {
+								"label": {
+									"en-GB": "View the docs"
+								},
+								"page": "https://docs.getfrontender.com/",
+								"id": ""
+							},
+							"label": {
+								"en-GB": "Button"
+							},
+							"control": "core/route"
 						}
 					}
 				},
@@ -213,17 +244,17 @@
 							"control": "project/container_tag"
 						},
 						"container_class": {
-							"value": "bg-img",
+							"value": "wrapper post bg-img",
 							"control": "project/container_class"
 						}
 					}
 				}
 			},
 			"containers": [],
-			"blueprint": "5ce7eb30f7269c8d544f2adb"
+			"blueprint": "5ce7eb30f7269c8d544f2add"
 		},
 		{
-			"frontender": "7270d2907fd6117d1331076d7b6b8c66",
+			"frontender": "20cf9b8e9c353917be9f200cb638965d",
 			"template": "demo/containers/footer.html.twig",
 			"name": {
 				"en-GB": "Footer"
@@ -382,6 +413,6 @@
 		}
 	],
 	"name": {
-		"en-GB": "404"
+		"en-GB": "Documentation"
 	}
 }

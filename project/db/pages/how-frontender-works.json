@@ -1,0 +1,760 @@
+{
+	"route": {
+		"en-GB": "how-frontender-works"
+	},
+	"frontender": "b8a938c7ddaa065f7197dfe156cf20c1",
+	"template": "demo/layouts/default.html.twig",
+	"description": {
+		"en-GB": "How Frontender works page"
+	},
+	"page_config": {
+		"seo": {
+			"label": {
+				"en-GB": "SEO"
+			},
+			"controls": {
+				"title": {
+					"value": {
+						"en-GB": "How Frontender works"
+					},
+					"label": {
+						"en-GB": "Page title"
+					},
+					"control": "core/text",
+					"type": "text"
+				},
+				"meta_description": {
+					"value": {
+						"en-GB": "Demo – A skeleton project for Frontender"
+					},
+					"label": {
+						"en-GB": "Serp Description"
+					},
+					"control": "core/textarea",
+					"type": "textarea"
+				},
+				"meta_keywords": {
+					"value": {
+						"en-GB": "Frontender, Frontender Desktop, Frontender Platform, Demo"
+					},
+					"label": {
+						"en-GB": "Serp keywords"
+					},
+					"control": "core/textarea",
+					"type": "textarea"
+				},
+				"meta_robots": {
+					"value": "index, follow",
+					"label": {
+						"en-GB": "Indexing"
+					},
+					"control": "core/robots",
+					"type": "text"
+				}
+			}
+		}
+	},
+	"template_config": {
+		"config": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_class": {
+					"value": "",
+					"core": "project/container_class",
+					"type": "hidden"
+				},
+				"cupcake": {
+					"label": {
+						"en-GB": "Background colour"
+					},
+					"value": "cake__frosting",
+					"type": "list",
+					"options": [
+						{
+							"value": "cake",
+							"label": {
+								"en-GB": "Yellow frosting"
+							}
+						},
+						{
+							"value": "cake__teal",
+							"label": {
+								"en-GB": "Teal frosting"
+							}
+						},
+						{
+							"value": "cake__blue",
+							"label": {
+								"en-GB": "Blue frosting"
+							}
+						},
+						{
+							"value": "cake__frosting",
+							"label": {
+								"en-GB": "White frosting"
+							}
+						}
+					]
+				}
+			}
+		}
+	},
+	"containers": [
+		{
+			"frontender": "357e8a8f3c50872434d6b13bff359076",
+			"template": "demo/containers/header.html.twig",
+			"name": {
+				"en-GB": "Header"
+			},
+			"description": {
+				"en-GB": "Simple header container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"label": {
+									"en-GB": ""
+								},
+								"page": "",
+								"id": ""
+							},
+							"label": {
+								"en-GB": "Links"
+							},
+							"control": "core/route"
+						},
+						"links": {
+							"value": [
+								{
+									"label": {
+										"en-GB": "Home"
+									},
+									"page": "home",
+									"id": ""
+								},
+								{
+									"label": {
+										"en-GB": "Demo menu"
+									},
+									"page": "/",
+									"id": ""
+								},
+								{
+									"label": {
+										"en-GB": "Demo item"
+									},
+									"page": "/",
+									"id": ""
+								}
+							],
+							"label": {
+								"en-GB": "Menu links"
+							},
+							"control": "core/route",
+							"repeatable": true
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "header",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"control": "project/container_class"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2ad7"
+		},
+		{
+			"frontender": "d9761dff6e12804fd750992c50e7d484",
+			"template": "demo/containers/banner/banner.html.twig",
+			"name": {
+				"en-GB": "Banner"
+			},
+			"description": {
+				"en-GB": "Banner container"
+			},
+			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "-DesRxj28Ns"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "How Frontender works"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "section",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "bg-img",
+							"control": "project/container_class"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2adb"
+		},
+		{
+			"frontender": "32cb0f61cc8655eba3bf5c1181d049ac",
+			"template": "demo/containers/article/image.html.twig",
+			"name": {
+				"en-GB": "Paragraph with image"
+			},
+			"description": {
+				"en-GB": "Paragraph with configurable image"
+			},
+			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "3962cSRPwOo"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "How Frontender works"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"body": {
+							"value": {
+								"en-GB": "Powder icing cake icing sweet muffin. Sweet roll dragée sweet roll. Dessert tootsie roll macaroon fruitcake liquorice sweet biscuit tiramisu danish. Gummi bears lollipop tiramisu donut tootsie roll jelly beans donut. Cookie toffee apple pie soufflé soufflé. Gummies cookie jelly-o lemon drops halvah tiramisu donut.\n\nDanish tart topping. Danish marzipan jelly beans bonbon ice cream chocolate bar. Icing apple pie marshmallow. Tiramisu donut jujubes cake dessert. Sugar plum sweet dessert jujubes tart. Jelly-o chocolate cake halvah toffee cake lemon drops. Cheesecake pie wafer apple pie candy cupcake toffee.\n\nPie fruitcake tart apple pie halvah lemon drops sesame snaps. Caramels cookie cake pie soufflé lemon drops. Candy sugar plum bear claw brownie marshmallow bear claw cupcake powder. Fruitcake chocolate bonbon oat cake icing sweet roll. Oat cake toffee chocolate cake chocolate carrot cake danish chocolate bar danish pastry. Sesame snaps jelly-o carrot cake."
+							},
+							"label": {
+								"en-GB": "Body"
+							},
+							"control": "core/markdown"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "article",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "container",
+							"control": "project/container_class"
+						},
+						"leader": {
+							"value": "leader",
+							"control": "project/leader"
+						},
+						"trailer": {
+							"value": "trailer",
+							"control": "project/trailer"
+						},
+						"image_alignment": {
+							"value": "left",
+							"label": {
+								"en-GB": "Image alignment"
+							},
+							"options": [
+								{
+									"value": "left",
+									"label": {
+										"en-GB": "Left"
+									}
+								},
+								{
+									"value": "right",
+									"label": {
+										"en-GB": "Right"
+									}
+								}
+							],
+							"type": "list",
+							"control": "core/abstract"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ceba2a2f7269c9ca05e9ea3"
+		},
+		{
+			"frontender": "cf1d6fb503e349028b43fd69f6e56c05",
+			"template": "demo/containers/article/image.html.twig",
+			"name": {
+				"en-GB": "Paragraph with image"
+			},
+			"description": {
+				"en-GB": "Paragraph with configurable image"
+			},
+			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "zk-fclJdGas"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "Controls"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"body": {
+							"value": {
+								"en-GB": "A special kind of blueprint, only for controls. A control can reference another control.\nFrontender comes with a couple of core controls out of the box, these may be used alongside custom project controls.\n\nA blueprint (definition) is like a container. Blueprints have controls that allow Frontender Desktop to render the configuration UI used to edit the container instructions (config). Blueprints are used as a template to create containers. They are preformatted to container useful default settings that can be overridden once they have been included onto a page.\n\nThe following controls are build into Frontender:\n\n| Control | Information\n| - | - |\n| core/boolean | Select list with \"Yes\" and \"No\", default value is \"No\"(0). |\n| core/hidden | Hidden input field (not rendered in Frontender). |\n| core/markdown | Allows user to use markdown inside of a text area. |\n| core/number | Number input field |\n| core/url | URL field |\n| core/route | Route field |\n| core/list | This control allows the user to pick a value from a list of options. |\n| core/textarea | Normal textarea |\n| core/json | JSON textarea |\n| core/abstract | Abstract |\n| core/text | Text input field |\n| core/robots | Robots text field |\n\nAdditional core controls will be added in the near future."
+							},
+							"label": {
+								"en-GB": "Body"
+							},
+							"control": "core/markdown"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "article",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "container",
+							"control": "project/container_class"
+						},
+						"leader": {
+							"value": "leader",
+							"control": "project/leader"
+						},
+						"trailer": {
+							"value": "trailer",
+							"control": "project/trailer"
+						},
+						"image_alignment": {
+							"value": "right",
+							"label": {
+								"en-GB": "Image alignment"
+							},
+							"options": [
+								{
+									"value": "left",
+									"label": {
+										"en-GB": "Left"
+									}
+								},
+								{
+									"value": "right",
+									"label": {
+										"en-GB": "Right"
+									}
+								}
+							],
+							"type": "list",
+							"control": "core/abstract"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ceba2a2f7269c9ca05e9ea3"
+		},
+		{
+			"frontender": "1559131001",
+			"template": "demo/containers/form/form.html.twig",
+			"name": {
+				"en-GB": "Form"
+			},
+			"description": {
+				"en-GB": "Form container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "Got any questions about Frontender?"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"select": {
+							"label": {
+								"en-GB": "Select options"
+							},
+							"value": [
+								{
+									"en-GB": "Pricing"
+								},
+								{
+									"en-GB": "Implementation"
+								},
+								{
+									"en-GB": "Introduction"
+								}
+							],
+							"repeatable": true,
+							"at_least": 1,
+							"at_most": 20,
+							"control": "core/text"
+						},
+						"radio": {
+							"label": {
+								"en-GB": "Radio options"
+							},
+							"value": [
+								{
+									"en-GB": "By using this form I agree to the terms and conditions"
+								}
+							],
+							"repeatable": true,
+							"at_least": 1,
+							"at_most": 20,
+							"control": "core/text"
+						},
+						"checkbox": {
+							"label": {
+								"en-GB": "Checkboxes"
+							},
+							"value": [
+								{
+									"en-GB": "Email me a copy of this message"
+								},
+								{
+									"en-GB": "I am a human and not a robot"
+								}
+							],
+							"repeatable": true,
+							"at_least": 1,
+							"at_most": 20,
+							"control": "core/text"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "section",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "container",
+							"control": "project/container_class"
+						},
+						"leader": {
+							"value": "leader",
+							"control": "project/leader"
+						},
+						"trailer": {
+							"value": "trailer",
+							"control": "project/trailer"
+						}
+					}
+				}
+			}
+		},
+		{
+			"frontender": "1bb3026f666d7898af8e0bff24f24643",
+			"template": "demo/containers/footer.html.twig",
+			"name": {
+				"en-GB": "Footer"
+			},
+			"description": {
+				"en-GB": "Simple footer container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "Contact us"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"icons": {
+							"value": [
+								{
+									"icon": "fa-twitter",
+									"icon_size": "round",
+									"page": {
+										"en-GB": "https://twitter.com/bricksonomy"
+									},
+									"label": {
+										"en-GB": "Twitter"
+									}
+								},
+								{
+									"icon": "fa-github",
+									"icon_size": "round",
+									"page": {
+										"en-GB": "https://github.com/getfrontender"
+									},
+									"label": {
+										"en-GB": "Github"
+									}
+								}
+							],
+							"label": {
+								"en-GB": "Icon buttons"
+							},
+							"controls": {
+								"icon": {
+									"type": "list",
+									"options": [
+										{
+											"value": "fa-facebook",
+											"label": {
+												"en-GB": "Facebook"
+											}
+										},
+										{
+											"value": "fa-twitter",
+											"label": {
+												"en-GB": "Twitter"
+											}
+										},
+										{
+											"value": "fa-instagram",
+											"label": {
+												"en-GB": "Instagram"
+											}
+										},
+										{
+											"value": "fa-github",
+											"label": {
+												"en-GB": "Github"
+											}
+										},
+										{
+											"value": "fa-linkedin",
+											"label": {
+												"en-GB": "LinkedIn"
+											}
+										},
+										{
+											"value": "fa-share",
+											"label": {
+												"en-GB": "External link"
+											}
+										}
+									],
+									"label": {
+										"en-GB": "Icon"
+									},
+									"value": ""
+								},
+								"icon_size": {
+									"type": "list",
+									"options": [
+										{
+											"value": "round",
+											"label": {
+												"en-GB": "Large"
+											}
+										},
+										{
+											"value": "",
+											"label": {
+												"en-GB": "Small"
+											}
+										}
+									],
+									"label": {
+										"en-GB": "Icon size"
+									},
+									"value": "round"
+								},
+								"page": {
+									"type": "text",
+									"value": "",
+									"label": {
+										"en-GB": "Button link"
+									},
+									"control": "core/text"
+								},
+								"label": {
+									"type": "text",
+									"value": "",
+									"label": {
+										"en-GB": "Button label"
+									},
+									"control": "core/text"
+								}
+							},
+							"repeatable": true,
+							"type": "compound"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "footer",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"control": "project/container_class"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2ad9"
+		}
+	],
+	"name": {
+		"en-GB": "How Frontender works"
+	}
+}

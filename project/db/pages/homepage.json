@@ -1,0 +1,790 @@
+{
+	"route": {
+		"en-GB": "/"
+	},
+	"frontender": "fac5fcc39cefe7819cba707add5cd357",
+	"template": "demo/layouts/default.html.twig",
+	"description": {
+		"en-GB": "Homepage"
+	},
+	"page_config": {
+		"seo": {
+			"label": {
+				"en-GB": "SEO"
+			},
+			"controls": {
+				"title": {
+					"value": {
+						"en-GB": ""
+					},
+					"label": {
+						"en-GB": "Page title"
+					},
+					"control": "core/text",
+					"type": "text"
+				},
+				"meta_description": {
+					"value": {
+						"en-GB": ""
+					},
+					"label": {
+						"en-GB": "Serp Description"
+					},
+					"control": "core/textarea",
+					"type": "textarea"
+				},
+				"meta_keywords": {
+					"value": {
+						"en-GB": "Frontender, Frontender Desktop, Frontender Platform, Demo"
+					},
+					"label": {
+						"en-GB": "Serp keywords"
+					},
+					"control": "core/textarea",
+					"type": "textarea"
+				},
+				"meta_robots": {
+					"value": "index, follow",
+					"label": {
+						"en-GB": "Indexing"
+					},
+					"control": "core/robots",
+					"type": "text"
+				}
+			}
+		}
+	},
+	"template_config": {
+		"config": {
+			"label": {
+				"en-GB": "Settings"
+			},
+			"controls": {
+				"container_class": {
+					"value": "",
+					"label": {
+						"en-GB": "Body class"
+					},
+					"core": "core/text",
+					"type": "hidden"
+				},
+				"cupcake": {
+					"label": {
+						"en-GB": "Background colour"
+					},
+					"value": "cake__frosting",
+					"type": "list",
+					"options": [
+						{
+							"value": "cake",
+							"label": {
+								"en-GB": "Yellow frosting"
+							}
+						},
+						{
+							"value": "cake__teal",
+							"label": {
+								"en-GB": "Teal frosting"
+							}
+						},
+						{
+							"value": "cake__blue",
+							"label": {
+								"en-GB": "Blue frosting"
+							}
+						},
+						{
+							"value": "cake__frosting",
+							"label": {
+								"en-GB": "White frosting"
+							}
+						}
+					]
+				}
+			}
+		}
+	},
+	"containers": [
+		{
+			"frontender": "0532c8536fbff257608f640602515365",
+			"template": "demo/containers/header.html.twig",
+			"name": {
+				"en-GB": "Header"
+			},
+			"description": {
+				"en-GB": "Simple header container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"label": {
+									"en-GB": ""
+								},
+								"page": "",
+								"id": ""
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/route"
+						},
+						"links": {
+							"value": [
+								{
+									"label": {
+										"en-GB": "Demo menu"
+									},
+									"page": "/",
+									"id": ""
+								},
+								{
+									"label": {
+										"en-GB": "Demo item"
+									},
+									"page": "/",
+									"id": ""
+								}
+							],
+							"label": {
+								"en-GB": "Menu links"
+							},
+							"control": "core/route",
+							"repeatable": true
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "header",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"control": "project/container_class"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2ad7"
+		},
+		{
+			"frontender": "8bbfecc4474bca981236bf7d97b96a44",
+			"template": "demo/containers/banner/banner.html.twig",
+			"name": {
+				"en-GB": "Banner"
+			},
+			"description": {
+				"en-GB": "Banner container"
+			},
+			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "NtwdMDylfTw"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "A taste of success"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"subtitle": {
+							"value": {
+								"en-GB": "Made with Frontender"
+							},
+							"label": {
+								"en-GB": "Sub title"
+							},
+							"control": "core/text"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "section",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "bg-img",
+							"control": "project/container_class"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2adb"
+		},
+		{
+			"frontender": "bcf3c06756d55060717c28ecc558d26e",
+			"template": "demo/containers/post/post.html.twig",
+			"name": {
+				"en-GB": "Post"
+			},
+			"description": {
+				"en-GB": "Simple post container"
+			},
+			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "pGM4sjt_BdQ"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "This website was built using Frontender"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"body": {
+							"value": {
+								"en-GB": "Cake powder I love powder gummies donut fruitcake bear claw pudding. Donut I love chocolate cake cotton candy. Pie chocolate bonbon lemon drops I love wafer. Marshmallow powder pie pie croissant cotton candy I love gingerbread. Pie halvah candy dragée candy canes croissant danish cupcake soufflé. Liquorice candy marzipan pastry bonbon wafer macaroon. Gingerbread oat cake gingerbread candy canes. Cake liquorice I love cake dessert sweet donut candy jujubes. Chupa chups I love sesame snaps dragée. I love apple pie I love soufflé caramels pie. Pudding marzipan sweet roll cotton candy powder. Gummi bears toffee cake. Gummies dragée dessert gummies jelly beans chocolate cake sugar plum."
+							},
+							"label": {
+								"en-GB": "Post body"
+							},
+							"control": "core/markdown"
+						},
+						"date": {
+							"value": {
+								"en-GB": "19.06.2019"
+							},
+							"label": {
+								"en-GB": "Date"
+							},
+							"control": "core/text"
+						},
+						"button": {
+							"value": {
+								"label": {
+									"en-GB": "Read more about Frontender"
+								},
+								"page": "",
+								"id": ""
+							},
+							"label": {
+								"en-GB": "Button"
+							},
+							"control": "core/route"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "section",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "wrapper post bg-img",
+							"control": "project/container_class"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2add"
+		},
+		{
+			"frontender": "3069c8086a4f89eb0ec5232ccb7712d9",
+			"template": "demo/containers/article/image.html.twig",
+			"name": {
+				"en-GB": "Paragraph with image"
+			},
+			"description": {
+				"en-GB": "Paragraph with configurable image"
+			},
+			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "XrAsKFIEPvE"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "The psychology of cupcakes"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"body": {
+							"value": {
+								"en-GB": "Halvah cookie cupcake chocolate bar. Pie muffin muffin biscuit gummi bears. Toffee icing liquorice toffee. Muffin I love cotton candy fruitcake. Croissant lemon drops sweet lollipop marshmallow tootsie roll cake sesame snaps I love. Cake pastry croissant. Jelly-o I love lemon drops candy dessert sugar plum bonbon. Lemon drops bonbon gummies chupa chups macaroon chocolate cake sugar plum. Lemon drops jelly beans marshmallow bonbon marshmallow gingerbread tootsie roll biscuit jelly beans. Topping cotton candy sesame snaps danish chupa chups bonbon gummies fruitcake liquorice. Marzipan carrot cake pudding cookie jelly carrot cake cake muffin. Sweet roll jujubes bear claw apple pie fruitcake sugar plum danish soufflé. Cookie oat cake I love I love ice cream."
+							},
+							"label": {
+								"en-GB": "Body"
+							},
+							"control": "core/markdown"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "article",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "container",
+							"control": "project/container_class"
+						},
+						"leader": {
+							"value": "leader",
+							"control": "project/leader"
+						},
+						"trailer": {
+							"value": "trailer",
+							"control": "project/trailer"
+						},
+						"image_alignment": {
+							"value": "right",
+							"label": {
+								"en-GB": "Image alignment"
+							},
+							"options": [
+								{
+									"value": "left",
+									"label": {
+										"en-GB": "Left"
+									}
+								},
+								{
+									"value": "right",
+									"label": {
+										"en-GB": "Right"
+									}
+								}
+							],
+							"type": "list",
+							"control": "core/abstract"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ceba2a2f7269c9ca05e9ea3"
+		},
+		{
+			"frontender": "400eb7bbb212eba83e27218762cf8772",
+			"template": "demo/containers/article/body.html.twig",
+			"name": {
+				"en-GB": "Article body"
+			},
+			"description": {
+				"en-GB": "Article body"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "Cupcake passion more than a trend"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"standfirst": {
+							"value": {
+								"en-GB": "Caramels caramels wafer chocolate bar bonbon pie toffee brownie icing. Powder halvah cake lemon drops candy muffin candy icing lemon drops. Macaroon chocolate bar jujubes jujubes cotton candy. Cotton candy chocolate bar cotton candy bonbon soufflé muffin pie pudding marshmallow. Gummies sugar plum biscuit. Donut muffin fruitcake cookie. Bonbon sugar plum gingerbread jelly-o. Danish croissant jelly beans fruitcake. Pastry cookie halvah chocolate bar macaroon oat cake tootsie roll. Sweet roll icing bonbon tart halvah."
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"body": {
+							"value": [
+								{
+									"title": {
+										"en-GB": "Everything you need to know to make gorgeous cupcakes"
+									},
+									"body": {
+										"en-GB": "Fruitcake tart brownie pie tootsie roll. Croissant dessert dessert brownie jelly beans chocolate bar. Carrot cake chocolate lemon drops dessert sweet roll. Ice cream gummies cotton candy toffee dessert. Cotton candy chocolate bar lollipop cake dragée jujubes wafer. Marshmallow cupcake chocolate bar. Marshmallow oat cake gingerbread cookie jelly beans. Marshmallow danish donut gummies halvah tiramisu cupcake."
+									}
+								},
+								{
+									"title": {
+										"en-GB": "Influencing of guava processing residues incorporation on cupcake characterization"
+									},
+									"body": {
+										"en-GB": "Wafer dragée cookie halvah icing. Tootsie roll liquorice danish bear claw gingerbread pastry halvah liquorice. Caramels wafer bonbon marzipan brownie dragée bonbon lollipop. Biscuit donut apple pie. Marshmallow cake oat cake bear claw donut caramels. Liquorice lemon drops cake jujubes sesame snaps gummi bears sweet.\n\n"
+									}
+								},
+								{
+									"title": {
+										"en-GB": "The cupcake boom is here. The cupcake crash is coming."
+									},
+									"body": {
+										"en-GB": "Cotton candy icing carrot cake pastry gingerbread cake danish. Tootsie roll marshmallow dessert gummies croissant tiramisu lollipop gingerbread sugar plum. Fruitcake dragée cake sweet roll gingerbread jelly beans lemon drops soufflé toffee. Cookie jujubes chocolate croissant chocolate bear claw gummies biscuit jelly-o. Chocolate bar liquorice soufflé sweet roll."
+									}
+								},
+								{
+									"title": {
+										"en-GB": "Forget Gold, the Gourmet Cupcake Market Is Crashing"
+									},
+									"body": {
+										"en-GB": "Powder cheesecake toffee liquorice toffee chocolate cake apple pie caramels. Cupcake icing icing chocolate bar chocolate donut halvah chocolate bar lemon drops. Dragée gummi bears liquorice. Tiramisu oat cake macaroon soufflé jelly beans caramels candy canes. Toffee sesame snaps bear claw dessert wafer. Jelly beans candy sweet roll liquorice caramels lemon drops."
+									}
+								},
+								{
+									"title": {
+										"en-GB": "Cake & Cupcake Decorating Timelines"
+									},
+									"body": {
+										"en-GB": "Lollipop toffee donut bonbon halvah candy biscuit. Bear claw lemon drops tart toffee halvah liquorice dessert cake. Pie brownie jelly beans cake. Cake candy danish powder dessert oat cake gummies donut. Apple pie halvah pie topping ice cream dragée jelly-o muffin. Candy gummi bears lollipop danish halvah bear claw pudding."
+									}
+								}
+							],
+							"label": {
+								"en-GB": "Body text"
+							},
+							"controls": {
+								"title": {
+									"hidden": "0",
+									"access": "all",
+									"frontender": "76b5dddf72bee5762ba63d35cebc30d0",
+									"type": "text",
+									"value": "",
+									"label": {
+										"en-GB": "Title"
+									},
+									"control": "core/text"
+								},
+								"body": {
+									"hidden": "0",
+									"access": "all",
+									"frontender": "7196f5a43c22eebe68d55bd2d3e67813",
+									"type": "textarea",
+									"value": "",
+									"label": {
+										"en-GB": "Textarea"
+									},
+									"control": "core/textarea"
+								}
+							},
+							"repeatable": true,
+							"type": "compound"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "article",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "container",
+							"control": "project/container_class"
+						},
+						"leader": {
+							"value": "leader",
+							"control": "project/leader"
+						},
+						"trailer": {
+							"value": "trailer",
+							"control": "project/trailer"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ceb9087f7269c9c68349672"
+		},
+		{
+			"frontender": "44b0665c5bd98d3eb20eeb5c0cb70b7b",
+			"template": "demo/containers/footer.html.twig",
+			"name": {
+				"en-GB": "Footer"
+			},
+			"description": {
+				"en-GB": "Simple footer container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "Contact us"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"icons": {
+							"value": [
+								{
+									"icon": "fa-twitter",
+									"icon_size": "round",
+									"page": {
+										"en-GB": "https://twitter.com/bricksonomy"
+									},
+									"label": {
+										"en-GB": "Twitter"
+									}
+								},
+								{
+									"icon": "fa-github",
+									"icon_size": "round",
+									"page": {
+										"en-GB": "https://github.com/getfrontender"
+									},
+									"label": {
+										"en-GB": "Github"
+									}
+								}
+							],
+							"label": {
+								"en-GB": "Icon buttons"
+							},
+							"controls": {
+								"icon": {
+									"type": "list",
+									"options": [
+										{
+											"value": "fa-facebook",
+											"label": {
+												"en-GB": "Facebook"
+											}
+										},
+										{
+											"value": "fa-twitter",
+											"label": {
+												"en-GB": "Twitter"
+											}
+										},
+										{
+											"value": "fa-instagram",
+											"label": {
+												"en-GB": "Instagram"
+											}
+										},
+										{
+											"value": "fa-github",
+											"label": {
+												"en-GB": "Github"
+											}
+										},
+										{
+											"value": "fa-linkedin",
+											"label": {
+												"en-GB": "LinkedIn"
+											}
+										},
+										{
+											"value": "fa-share",
+											"label": {
+												"en-GB": "External link"
+											}
+										}
+									],
+									"label": {
+										"en-GB": "Icon"
+									},
+									"value": ""
+								},
+								"icon_size": {
+									"type": "list",
+									"options": [
+										{
+											"value": "round",
+											"label": {
+												"en-GB": "Large"
+											}
+										},
+										{
+											"value": "",
+											"label": {
+												"en-GB": "Small"
+											}
+										}
+									],
+									"label": {
+										"en-GB": "Icon size"
+									},
+									"value": "round"
+								},
+								"page": {
+									"type": "text",
+									"value": "",
+									"label": {
+										"en-GB": "Button link"
+									},
+									"control": "core/text"
+								},
+								"label": {
+									"type": "text",
+									"value": "",
+									"label": {
+										"en-GB": "Button label"
+									},
+									"control": "core/text"
+								}
+							},
+							"repeatable": true,
+							"type": "compound"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "footer",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "",
+							"control": "project/container_class"
+						}
+					}
+				}
+			},
+			"containers": [],
+			"blueprint": "5ce7eb30f7269c8d544f2ad9"
+		}
+	],
+	"name": {
+		"en-GB": "Homepage"
+	}
+}
