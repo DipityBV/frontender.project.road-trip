@@ -14,9 +14,9 @@
 {% import "macros/template.html.twig" as helper %}
 
 <{{ config.container_tag|default('header') }} {{ helper.class_attribute(config, ['']|join('  |  ')|trim)|raw }} id="header" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
-    {% if content.title.label|t(locales) %}
+    {% if content.title.label|t %}
         <div class="logo">
-            <a href="{{ route({'page': content.title.page }) }}">{{ content.title.label|t(locales) }}</a>
+            <a href="{{ route({'page': content.title.page }) }}">{{ content.title.label|t }}</a>
         </div>
     {% endif %}
 
@@ -29,7 +29,7 @@
             <li><a href="{{ route({'page': '/how-frontender-works' }) }}">How it works</a></li>
             <li><a href="{{ route({'page': '/documentation' }) }}">Documentation</a></li>
             {% for link in content.links %}
-                <li><a href="{{ route({'page': link.page }) }}">{{ link.label|t(locales) }}</a></li>
+                <li><a href="{{ route({'page': link.page }) }}">{{ link.label|t }}</a></li>
             {% endfor %}
         </ul>
     </nav>

@@ -19,15 +19,15 @@
 {% import "macros/template.html.twig" as helper %}
 
 <{{ config.container_tag|default('section') }} id="banner" data-bg="{{ model.urls.raw }}&fit=crop?crop=faces&w=1480&q=80" {{ helper.class_attribute(config, ['']|join('  |  ')|trim)|raw }} {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
-    {% if content.title|t(locales) %}
+    {% if content.title|t %}
         <div class="inner">
             <header>
-                <h1>{{ content.title|t(locales) }}</h1>
+                <h1>{{ content.title|t }}</h1>
             </header>
-            {% if content.subtitle|t(locales) %}
+            {% if content.subtitle|t %}
                 <p>
-                    <img class="attribution__brand" src="https://development.getfrontender.brickson.kitchen.local/assets/images/brand/f-dot-framed-theme.png">
-                    <small class="attribution__slogan">{{ content.subtitle|t(locales) }}</small>
+                    <img class="attribution__brand" src="https://development.getfrontender.brickson.kitchen.local/assets/images/brand/f-dot-framed-theme.png" alt="{{ content.subtitle|t }}">
+                    <small class="attribution__slogan">{{ content.subtitle|t }}</small>
                 </p>
             {% endif %}
         </div>

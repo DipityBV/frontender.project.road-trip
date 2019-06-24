@@ -21,22 +21,22 @@
 <{{ config.container_tag|default('section') }} {{ helper.class_attribute(config, ['']|join('  |  ')|trim)|raw }} data-bg="{{ model.urls.raw }}&fit=crop?crop=faces&w=1480&q=80" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
     <div class="inner">
         <article class="box">
-            {% if content.title|t(locales) %}
+            {% if content.title|t %}
                 <header>
-                    <h2>{{ content.title|t(locales) }}</h2>
-                    <p>{{ content.date|t(locales) }}</p>
+                    <h2>{{ content.title|t }}</h2>
+                    <p>{{ content.date|t }}</p>
                 </header>
             {% endif %}
 
-            {% if content.body|t(locales) %}
+            {% if content.body|t %}
                 <div class="content">
-                    {{ content.body|t(locales)|markdown|raw }}
+                    {{ content.body|t|markdown|raw }}
                 </div>
             {% endif %}
 
-            {% if content.button.label|t(locales) %}
+            {% if content.button.label|t %}
                 <footer>
-                    <a href="{{ content.button.page|t(locales) }}" class="button alt">{{ content.button.label|t(locales) }}</a>
+                    <a href="{{ content.button.page|t }}" class="button alt">{{ content.button.label|t }}</a>
                 </footer>
             {% endif %}
         </article>
