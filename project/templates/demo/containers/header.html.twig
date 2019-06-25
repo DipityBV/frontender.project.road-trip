@@ -28,6 +28,13 @@
             <li><a href="{{ route({'page': '/' }) }}">Home</a></li>
             <li><a href="{{ route({'page': '/how-frontender-works' }) }}">How it works</a></li>
             <li><a href="{{ route({'page': '/documentation' }) }}">Documentation</a></li>
+
+            <!-- @TODO replace with correct my.getfrontender link -->
+            <li><a href="https://brickson.nl" target="_blank">Login</a></li>
+
+            <!-- @TODO replace with correct download link -->
+            <li><a href="https://brickson.nl" target="_blank">Download</a></li>
+            
             {% for link in content.links %}
                 <li><a href="{{ route({'page': link.page }) }}">{{ link.label|t }}</a></li>
             {% endfor %}

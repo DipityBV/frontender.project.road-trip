@@ -135,6 +135,13 @@
 						"links": {
 							"value": [
 								{
+                                    "label": {
+                                        "en-GB": "Cupcake article"
+                                    },
+                                    "page": "/cupcake",
+                                    "id": ""
+                                },
+								{
 									"label": {
 										"en-GB": "Demo menu"
 									},

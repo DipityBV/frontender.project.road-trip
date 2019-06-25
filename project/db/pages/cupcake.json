@@ -1,11 +1,11 @@
 {
 	"route": {
-		"en-GB": "documentation"
+		"en-GB": "cupcake"
 	},
-	"frontender": "b66109ff1c6440df30e0bc439ea4b968",
+	"frontender": "6277659f5afd1c72fd2cb47b6ed74a30",
 	"template": "demo/layouts/default.html.twig",
 	"description": {
-		"en-GB": "Documentation page blueprint."
+		"en-GB": "Cupcake proxy page"
 	},
 	"page_config": {
 		"seo": {
@@ -65,47 +65,15 @@
 					"label": {
 						"en-GB": "Body class"
 					},
-					"core": "project/container_class"
-				},
-				"cupcake": {
-					"label": {
-						"en-GB": "Background colour"
-					},
-					"value": "cake__frosting",
-					"type": "list",
-					"options": [
-						{
-							"value": "cake",
-							"label": {
-								"en-GB": "Yellow frosting"
-							}
-						},
-						{
-							"value": "cake__teal",
-							"label": {
-								"en-GB": "Teal frosting"
-							}
-						},
-						{
-							"value": "cake__blue",
-							"label": {
-								"en-GB": "Blue frosting"
-							}
-						},
-						{
-							"value": "cake__frosting",
-							"label": {
-								"en-GB": "White frosting"
-							}
-						}
-					]
+					"core": "core/text",
+					"type": "hidden"
 				}
 			}
 		}
 	},
 	"containers": [
 		{
-			"frontender": "c84995ed14ef05ef0e584b56838fdb55",
+			"frontender": "053ff5d4c71b2e1527e655c7a1011ed9",
 			"template": "demo/containers/header.html.twig",
 			"name": {
 				"en-GB": "Header"
@@ -134,7 +102,7 @@
 						},
 						"links": {
 							"value": [
-								{
+                                {
                                     "label": {
                                         "en-GB": "Cupcake article"
                                     },
@@ -184,7 +152,7 @@
 			"blueprint": "5ce7eb30f7269c8d544f2ad7"
 		},
 		{
-			"frontender": "f636ee43f18745be7afe4fe4e17e12e0",
+			"frontender": "57f941427ede3ccc59e4c0b8b791face",
 			"template": "demo/containers/post/post.html.twig",
 			"name": {
 				"en-GB": "Post"
@@ -203,7 +171,7 @@
 								"adapter": "Unsplash",
 								"model": "Image\\Search",
 								"id": {
-									"en-GB": "sl7jqLgd7lo"
+									"en-GB": "zk-fclJdGas"
 								}
 							},
 							"label": {
@@ -233,7 +201,7 @@
 					"controls": {
 						"title": {
 							"value": {
-								"en-GB": "Read the documentation"
+								"en-GB": "Cupcake proxy domain page"
 							},
 							"label": {
 								"en-GB": "Title"
@@ -242,7 +210,7 @@
 						},
 						"body": {
 							"value": {
-								"en-GB": "Jelly beans macaroon soufflé lemon drops brownie. Gingerbread chupa chups chupa chups lemon drops cupcake cookie. Powder tiramisu oat cake pudding tootsie roll dessert bear claw tiramisu pie. Tootsie roll jujubes pastry cake cookie gummi bears muffin bear claw caramels. Marzipan candy canes pie fruitcake bear claw tiramisu cotton candy gingerbread. Tiramisu toffee cotton candy gingerbread."
+								"en-GB": "## Topping cotton candy jelly beans biscuit cake. \nToffee sweet cupcake sweet lemon drops pie. Tart jujubes sweet biscuit dragée fruitcake dessert liquorice cotton candy. Chocolate cake carrot cake gingerbread soufflé tootsie roll cake marshmallow. Cake jelly cake jelly-o croissant. Jelly brownie tootsie roll toffee danish lollipop topping. Caramels chocolate fruitcake cotton candy jelly-o topping macaroon. Cotton candy sweet roll gummies. Dessert candy brownie tootsie roll. Oat cake cheesecake gummi bears. Bear claw liquorice fruitcake cake icing sugar plum cotton candy macaroon. Dessert cheesecake lollipop bear claw croissant. Marshmallow cookie cotton candy gingerbread icing jelly beans bonbon chocolate cake.\n\nCake chupa chups apple pie candy canes. Jujubes sugar plum cookie. Caramels gingerbread lemon drops brownie soufflé tart. Brownie chocolate cake topping cake. Gummies muffin gingerbread icing dragée. Tart gummies cake. Bear claw dragée halvah. Chupa chups tootsie roll gummi bears tootsie roll cotton candy chocolate bar wafer. Donut jelly pie jelly-o halvah. Sesame snaps candy croissant danish. Brownie pudding oat cake gummi bears candy. Soufflé chocolate bar fruitcake soufflé. Croissant marzipan sweet. Sesame snaps icing oat cake sweet icing cookie cookie soufflé chocolate cake.\n\n### Cupcake pie cheesecake lemon drops. \nSweet lollipop gingerbread powder jelly beans toffee. Cake sweet danish caramels chupa chups wafer marshmallow. Ice cream bear claw fruitcake chupa chups toffee brownie topping. Gingerbread gingerbread sugar plum sweet roll carrot cake macaroon oat cake cotton candy. Marshmallow chocolate bar danish oat cake gummies. Pie jujubes sweet pie gingerbread marzipan powder halvah danish. Gummi bears sweet roll chocolate cake sesame snaps ice cream. Candy toffee chocolate cake tart. Tart pastry marshmallow tart danish cake. Dessert soufflé cookie jelly chocolate apple pie icing topping dragée. Donut apple pie caramels jelly-o tootsie roll powder. Jelly beans oat cake chocolate cake gummies icing.\n\nCake cookie cupcake jelly beans jujubes pie. Liquorice lollipop pudding pudding powder cookie tootsie roll. Biscuit marzipan cupcake sweet roll muffin jelly beans macaroon fruitcake carrot cake. Muffin pie dragée. Bonbon gummi bears apple pie tiramisu cheesecake cake candy bear claw. Jujubes halvah marzipan pudding pudding chocolate bar caramels biscuit. Jelly chocolate cake macaroon gingerbread biscuit dessert sugar plum. Bear claw cookie dragée gummies chupa chups cheesecake carrot cake toffee. Gingerbread bear claw pudding cheesecake. Sugar plum caramels marzipan sweet chocolate gummies soufflé. Topping liquorice dessert lollipop cheesecake marzipan. Muffin wafer fruitcake marshmallow icing marzipan.\n\n### Chocolate muffin fruitcake gingerbread \nChupa chups biscuit sweet bear claw wafer. Cupcake danish icing donut caramels. Halvah chocolate bar donut. Marzipan bonbon liquorice gingerbread toffee. Pudding powder muffin. Chocolate wafer brownie macaroon danish tiramisu liquorice candy canes. Halvah marzipan dragée jelly lemon drops chupa chups ice cream sweet. Danish macaroon dragée candy dessert lollipop croissant. Jujubes chocolate cake donut tootsie roll sweet roll chocolate bar sweet roll donut gingerbread. Gingerbread macaroon wafer croissant caramels sweet lemon drops biscuit. Candy gingerbread chocolate cake brownie. Dragée cheesecake marzipan gummi bears. Liquorice tootsie roll oat cake.\n\n### Gingerbread cupcake topping croissant donut biscuit dessert. \nMarshmallow fruitcake danish topping toffee brownie. Candy sweet pie sesame snaps biscuit chocolate cake. Sweet sesame snaps liquorice candy ice cream cotton candy powder cake tootsie roll. Brownie donut icing danish. Tiramisu carrot cake dessert topping ice cream marshmallow cupcake. Dragée jelly-o danish cupcake. Sweet roll sugar plum jelly tart jelly-o cookie pudding danish pudding. Tootsie roll tootsie roll liquorice. Biscuit topping jelly beans candy canes gingerbread lemon drops pie sugar plum cake. Pastry pastry sesame snaps powder fruitcake. Tootsie roll dessert toffee sugar plum gummi bears sugar plum.\n\n#### Apple pie gummi bears cupcake carrot cake brownie. \nJujubes lemon drops carrot cake gingerbread oat cake lollipop cake chupa chups candy. Lemon drops gingerbread caramels brownie marshmallow. Topping marzipan macaroon marzipan. Halvah danish lollipop halvah gummi bears sweet roll lemon drops gummi bears. Donut gingerbread wafer dessert sweet roll topping. Chocolate gummies croissant croissant ice cream cotton candy. Carrot cake muffin croissant cake croissant. Ice cream gummi bears pastry powder toffee liquorice. Bonbon dessert icing cheesecake. Marshmallow apple pie bear claw jelly beans caramels icing. Sugar plum candy lollipop tootsie roll sweet roll.\n\n##### Cake donut cupcake ice cream cake\nTootsie roll dragée topping. Marshmallow chupa chups sweet pie sweet roll oat cake. Jelly ice cream dessert chocolate pie sugar plum powder cheesecake. Pastry powder chupa chups cotton candy. Danish soufflé pastry caramels tootsie roll. Croissant danish ice cream caramels lemon drops lollipop sweet roll topping. \n\n###### Lollipop gummi bears tiramisu. \nSweet tootsie roll gummi bears. Tootsie roll cotton candy marzipan tart. Dragée lollipop caramels biscuit dragée jelly beans croissant sweet roll halvah. Gummies dragée apple pie marshmallow marzipan sesame snaps pie. Fruitcake jelly beans topping."
 							},
 							"label": {
 								"en-GB": "Post body"
@@ -251,7 +219,7 @@
 						},
 						"date": {
 							"value": {
-								"en-GB": ""
+								"en-GB": "25.06.2019"
 							},
 							"label": {
 								"en-GB": "Date"
@@ -261,9 +229,9 @@
 						"button": {
 							"value": {
 								"label": {
-									"en-GB": "View the docs"
+									"en-GB": ""
 								},
-								"page": "https://docs.getfrontender.com/",
+								"page": "",
 								"id": ""
 							},
 							"label": {
@@ -293,7 +261,7 @@
 			"blueprint": "5ce7eb30f7269c8d544f2add"
 		},
 		{
-			"frontender": "20cf9b8e9c353917be9f200cb638965d",
+			"frontender": "c450c2627bfb36f48994d8d2befece82",
 			"template": "demo/containers/footer.html.twig",
 			"name": {
 				"en-GB": "Footer"
@@ -452,6 +420,6 @@
 		}
 	],
 	"name": {
-		"en-GB": "Documentation"
+		"en-GB": "Cupcake"
 	}
 }
