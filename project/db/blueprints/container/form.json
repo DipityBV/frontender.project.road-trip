@@ -15,7 +15,7 @@
 			"controls": {
 				"title": {
 					"value": {
-						"en-GB": "Form"
+						"en-GB": "Got any questions about Frontender?"
 					},
 					"label": {
 						"en-GB": "Title"
@@ -28,16 +28,13 @@
 					},
 					"value": [
 						{
-							"en-GB": "Manufacturing"
+							"en-GB": "Pricing"
 						},
 						{
-							"en-GB": "Shipping"
+							"en-GB": "Implementation"
 						},
 						{
-							"en-GB": "Administration"
-						},
-						{
-							"en-GB": "Human Resources"
+							"en-GB": "Introduction"
 						}
 					],
 					"repeatable": true,
@@ -51,13 +48,7 @@
 					},
 					"value": [
 						{
-							"en-GB": "Please"
-						},
-						{
-							"en-GB": "Select"
-						},
-						{
-							"en-GB": "An option"
+							"en-GB": "By using this form I agree to the terms and conditions"
 						}
 					],
 					"repeatable": true,
