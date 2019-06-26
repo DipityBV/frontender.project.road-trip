@@ -5,7 +5,7 @@
 	"frontender": "6277659f5afd1c72fd2cb47b6ed74a30",
 	"template": "demo/layouts/default.html.twig",
 	"description": {
-		"en-GB": "Cupcake proxy page"
+		"en-GB": "Cupcake page (Proxy)"
 	},
 	"page_config": {
 		"seo": {
@@ -65,8 +65,7 @@
 					"label": {
 						"en-GB": "Body class"
 					},
-					"core": "core/text",
-					"type": "hidden"
+					"core": "core/text"
 				}
 			}
 		}

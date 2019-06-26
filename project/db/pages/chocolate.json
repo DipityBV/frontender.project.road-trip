@@ -65,8 +65,7 @@
 					"label": {
 						"en-GB": "Body class"
 					},
-					"core": "core/text",
-					"type": "hidden"
+					"core": "core/text"
 				}
 			}
 		}

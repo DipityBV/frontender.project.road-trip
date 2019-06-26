@@ -65,7 +65,7 @@
 					"label": {
 						"en-GB": "Body class"
 					},
-					"core": "project/container_class"
+					"core": "core/text"
 				},
 				"cupcake": {
 					"label": {
@@ -135,12 +135,12 @@
 						"links": {
 							"value": [
 								{
-                                    "label": {
-                                        "en-GB": "Cupcake article"
-                                    },
-                                    "page": "/cupcake",
-                                    "id": ""
-                                },
+									"label": {
+										"en-GB": "Cupcake article"
+									},
+									"page": "/cupcake",
+									"id": ""
+								},
 								{
 									"label": {
 										"en-GB": "Demo menu"
@@ -329,7 +329,7 @@
 						},
 						"body": {
 							"value": {
-								"en-GB": "Cake powder I love powder gummies donut fruitcake bear claw pudding. Donut I love chocolate cake cotton candy. Pie chocolate bonbon lemon drops I love wafer. Marshmallow powder pie pie croissant cotton candy I love gingerbread. Pie halvah candy dragée candy canes croissant danish cupcake soufflé. Liquorice candy marzipan pastry bonbon wafer macaroon. Gingerbread oat cake gingerbread candy canes. Cake liquorice I love cake dessert sweet donut candy jujubes. Chupa chups I love sesame snaps dragée. I love apple pie I love soufflé caramels pie. Pudding marzipan sweet roll cotton candy powder. Gummi bears toffee cake. Gummies dragée dessert gummies jelly beans chocolate cake sugar plum."
+								"en-GB": "Content, design and technology are the cornerstones of online publishing. A successful combination of each of these results in a better user experience, which leads to happier visitors and higher conversions. And yet, the way in which we publish content to the web is compromised by one of those very cornerstones – technology.\n\nFor years now, we use content management systems to produce content. We construct web pages from that content by injecting it into templates that can be published by the CMS. While that process is simple and offers many benefits, it also introduces many disadvantages. \nDeveloping templates is different for each of those systems, and most of them have highly opinionated ideas about structure, composition and technology making templates and content tightly integrated within those systems. Content and presentation sit tightly integrated within the CMS, impairing re-use of both content as well as presentation.\n\nFrontender changes that. With Frontender you publish your content how, where and when you want. On any device, in any format, and in any language. From any source and to as many websites or applications as you need. Using your favourite front-end technology stack and your favourite CMS."
 							},
 							"label": {
 								"en-GB": "Post body"
@@ -429,7 +429,7 @@
 					"controls": {
 						"title": {
 							"value": {
-								"en-GB": "The psychology of cupcakes"
+								"en-GB": "The Frontender Ecosystem"
 							},
 							"label": {
 								"en-GB": "Title"
@@ -438,7 +438,7 @@
 						},
 						"body": {
 							"value": {
-								"en-GB": "Halvah cookie cupcake chocolate bar. Pie muffin muffin biscuit gummi bears. Toffee icing liquorice toffee. Muffin I love cotton candy fruitcake. Croissant lemon drops sweet lollipop marshmallow tootsie roll cake sesame snaps I love. Cake pastry croissant. Jelly-o I love lemon drops candy dessert sugar plum bonbon. Lemon drops bonbon gummies chupa chups macaroon chocolate cake sugar plum. Lemon drops jelly beans marshmallow bonbon marshmallow gingerbread tootsie roll biscuit jelly beans. Topping cotton candy sesame snaps danish chupa chups bonbon gummies fruitcake liquorice. Marzipan carrot cake pudding cookie jelly carrot cake cake muffin. Sweet roll jujubes bear claw apple pie fruitcake sugar plum danish soufflé. Cookie oat cake I love I love ice cream."
+								"en-GB": "Frontender is a collection of systems that in combination are referred to as Frontender. In reality Frontender Desktop (FED), Frontender Platform (FEP) and Frontender Manager (FEM) are the individual components in the ecosystem.\n\n### Frontender Desktop\nFrontender Desktop is the Frontend Management System. It is a desktop application (OSX, Windows and Linux) with which webviews are created, edited and managed from a WYSIWYG User Interface.\n\nFrontender Desktop ‘talks’ to Frontender Platform and Frontender Manager.\n\n### Frontender Platform\nFrontender Platform is the physical environment where your websites ‘live’. Its consists of a the core software and an instance for each website that is managed via that particular core – or also referred to as ‘Space’.\n\nThe space consists of core code and a databases. The core database holds all the Space resources like adapters, controls and blueprints. The space may also contain templates or any other shared assets, which may be overridden from each site using a ‘fallback strategy’.\n\nThe site consists of site specific code like templates, scripts and styling. It also has a database that stores page definitions. \n\nFrontender Platform is a secluded environment and only Frontender Desktop and Frontender Manager have access to it. Frontender Platform has no access to Frontender Manager or Frontender Desktop but it does have an API that can expose information and functionality, but only Frontender Manager and Frontender Desktop are authorised to access the API.\n\n### Frontender Manager\nFrontender Manager is an web application that functions as the control center. It manages all information regarding user-space-site access. Frontender Desktop authenticates users via the Frontender Manager. When the user is successfully logged in, Frontender Manager will serve him all spaces and sites that the user is authorised to manage. Frontender Manager is responsible for access control in Frontender Desktop (not in Frontender Platform!).\n\nFrontender Manager will store the bare minimum data that is required for Frontender Desktop to function. This includes information about the physical location of a Space (via it’s IP) and the roles and permissions for each user and per site.\n\nIt is important to note that when Frontender Manager is offline, it has no implications to Frontender Platform, all sites will continue to function. However, Frontender Desktop will only (partly?) function while it has an active session. So when a user is not logged in to Frontender Desktop, a site’s pages can not be managed until such time Frontender Manager is back online. Again: all sites will still be accessible for visitors.\n\nFrontender Manager has access to Frontender Desktop and Frontender Platform."
 							},
 							"label": {
 								"en-GB": "Body"
