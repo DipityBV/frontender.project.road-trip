@@ -33,7 +33,7 @@
                     <select name="category" id="category">
                         <option value="">- Category -</option>
                         {% for option in content.select %}
-                            <option value="1">{{ option|t }}</option>
+                            <option value="{{ option|t|lower|replace({' ': '-'}) }}">{{ option|t }}</option>
                         {% endfor %}
                     </select>
                 </div>

@@ -4523,7 +4523,7 @@
 	}
 
 	.cake #menu {
-		background: #FFC750;
+		background: #FBB829;
 	}
 	.cake__blue #menu {
 		background: #89C5F1;
@@ -4533,7 +4533,7 @@
 	}
 
 	.cake #footer {
-		background: #FFC750;
+		background: #FBB829;
 	}
 	.cake__blue #footer {
 		background: #89C5F1;
@@ -4550,6 +4550,16 @@
 	#footer ::-moz-placeholder {
 		color: #fff !important;
 	}
+
+	.cake__frosting #form ::placeholder,
+	.cake #form ::placeholder,
+	.cake__blue #form ::placeholder {
+		color: black !important;
+	}
+	.cake #footer ::placeholder {
+		color: rgba(255, 255, 255, .5) !important;
+	}
+	/* END::Override previous important statements */
 
 	.cake__frosting #header > a[href="#menu"] {
 		background: rgba(0, 0, 0, .15);
@@ -4582,10 +4592,6 @@
 		min-height: 400px;
 	}
 
-	.cake__frosting #form ::placeholder,
-	.cake #form ::placeholder {
-		color: black !important;
-	}
 	#form input[type="reset"].alt {
 		color: rgba(144, 144, 144, .5) !important;
 	}

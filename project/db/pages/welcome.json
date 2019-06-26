@@ -1,11 +1,11 @@
 {
 	"route": {
-		"en-GB": "/"
+		"en-GB": "welcome"
 	},
-	"frontender": "fac5fcc39cefe7819cba707add5cd357",
+	"frontender": "e9e8799e4feb8406a20aff4bba8e8912",
 	"template": "demo/layouts/default.html.twig",
 	"description": {
-		"en-GB": "Homepage"
+		"en-GB": "Welcome page blueprint."
 	},
 	"page_config": {
 		"seo": {
@@ -105,7 +105,7 @@
 	},
 	"containers": [
 		{
-			"frontender": "0532c8536fbff257608f640602515365",
+			"frontender": "339e914e75e310eff4c2cc8eaa9c957c",
 			"template": "demo/containers/header.html.twig",
 			"name": {
 				"en-GB": "Header"
@@ -134,13 +134,6 @@
 						},
 						"links": {
 							"value": [
-								{
-									"label": {
-										"en-GB": "Cupcake article"
-									},
-									"page": "/cupcake",
-									"id": ""
-								},
 								{
 									"label": {
 										"en-GB": "Demo menu"
@@ -184,94 +177,7 @@
 			"blueprint": "5ce7eb30f7269c8d544f2ad7"
 		},
 		{
-			"frontender": "8bbfecc4474bca981236bf7d97b96a44",
-			"template": "demo/containers/banner/banner.html.twig",
-			"name": {
-				"en-GB": "Banner"
-			},
-			"description": {
-				"en-GB": "Banner container"
-			},
-			"template_config": {
-				"model": {
-					"label": {
-						"en-GB": "Content"
-					},
-					"controls": {
-						"data": {
-							"value": {
-								"adapter": "Unsplash",
-								"model": "Image\\Search",
-								"id": {
-									"en-GB": "NtwdMDylfTw"
-								}
-							},
-							"label": {
-								"en-GB": "Banner image"
-							},
-							"control": "core/abstract",
-							"type": "lookup",
-							"adapters": [
-								{
-									"value": "Unsplash",
-									"label": "Unsplash",
-									"models": [
-										{
-											"value": "Image\\Search",
-											"label": "Image"
-										}
-									]
-								}
-							]
-						}
-					}
-				},
-				"content": {
-					"label": {
-						"en-GB": "Content"
-					},
-					"controls": {
-						"title": {
-							"value": {
-								"en-GB": "A taste of success"
-							},
-							"label": {
-								"en-GB": "Title"
-							},
-							"control": "core/text"
-						},
-						"subtitle": {
-							"value": {
-								"en-GB": "Made with Frontender"
-							},
-							"label": {
-								"en-GB": "Sub title"
-							},
-							"control": "core/text"
-						}
-					}
-				},
-				"config": {
-					"label": {
-						"en-GB": "Settings"
-					},
-					"controls": {
-						"container_tag": {
-							"value": "section",
-							"control": "project/container_tag"
-						},
-						"container_class": {
-							"value": "bg-img",
-							"control": "project/container_class"
-						}
-					}
-				}
-			},
-			"containers": [],
-			"blueprint": "5ce7eb30f7269c8d544f2adb"
-		},
-		{
-			"frontender": "bcf3c06756d55060717c28ecc558d26e",
+			"frontender": "ef72cfb8a93808d29ce5d55671c1cd47",
 			"template": "demo/containers/post/post.html.twig",
 			"name": {
 				"en-GB": "Post"
@@ -290,7 +196,7 @@
 								"adapter": "Unsplash",
 								"model": "Image\\Search",
 								"id": {
-									"en-GB": "pGM4sjt_BdQ"
+									"en-GB": "qJ0zGkrE1Zg"
 								}
 							},
 							"label": {
@@ -320,7 +226,7 @@
 					"controls": {
 						"title": {
 							"value": {
-								"en-GB": "This website was built using Frontender"
+								"en-GB": "Welcome to Frontender."
 							},
 							"label": {
 								"en-GB": "Title"
@@ -329,7 +235,7 @@
 						},
 						"body": {
 							"value": {
-								"en-GB": "Content, design and technology are the cornerstones of online publishing. A successful combination of each of these results in a better user experience, which leads to happier visitors and higher conversions. And yet, the way in which we publish content to the web is compromised by one of those very cornerstones – technology.\n\nFor years now, we use content management systems to produce content. We construct web pages from that content by injecting it into templates that can be published by the CMS. While that process is simple and offers many benefits, it also introduces many disadvantages. \nDeveloping templates is different for each of those systems, and most of them have highly opinionated ideas about structure, composition and technology making templates and content tightly integrated within those systems. Content and presentation sit tightly integrated within the CMS, impairing re-use of both content as well as presentation.\n\nFrontender changes that. With Frontender you publish your content how, where and when you want. On any device, in any format, and in any language. From any source and to as many websites or applications as you need. Using your favourite front-end technology stack and your favourite CMS."
+								"en-GB": "Frontender is a frontend templating system. It can be used with a headless, or decoupled, CMS.\n\nIt can also be used with more traditional CMS's like Wordpress, Joomla, Typo3, Drupal or Magento.\n\nFrontender consists of two components: the templating system itself, and a desktop application for OSX, Windows and Unix with which you can build webpages. We also have a mobile app planned for tablets and smartphones (see our Roadmap to see what other cool features we've got planned for Frontender).\n\nFrontender can be used to power anything that requires a frontend, like sites, web-applications or newsfeeds. It is multisite and multilingual out of the box."
 							},
 							"label": {
 								"en-GB": "Post body"
@@ -338,7 +244,7 @@
 						},
 						"date": {
 							"value": {
-								"en-GB": "19.06.2019"
+								"en-GB": ""
 							},
 							"label": {
 								"en-GB": "Date"
@@ -348,9 +254,9 @@
 						"button": {
 							"value": {
 								"label": {
-									"en-GB": "Read more about Frontender"
+									"en-GB": ""
 								},
-								"page": "welcome",
+								"page": "",
 								"id": ""
 							},
 							"label": {
@@ -380,7 +286,7 @@
 			"blueprint": "5ce7eb30f7269c8d544f2add"
 		},
 		{
-			"frontender": "3069c8086a4f89eb0ec5232ccb7712d9",
+			"frontender": "d3d98afbb818dd3d654b4fb55bbdd061",
 			"template": "demo/containers/article/image.html.twig",
 			"name": {
 				"en-GB": "Paragraph with image"
@@ -399,7 +305,7 @@
 								"adapter": "Unsplash",
 								"model": "Image\\Search",
 								"id": {
-									"en-GB": "XrAsKFIEPvE"
+									"en-GB": "djY0xDWCEUM"
 								}
 							},
 							"label": {
@@ -429,7 +335,7 @@
 					"controls": {
 						"title": {
 							"value": {
-								"en-GB": "The Frontender Ecosystem"
+								"en-GB": "The benefits of Frontender"
 							},
 							"label": {
 								"en-GB": "Title"
@@ -438,7 +344,7 @@
 						},
 						"body": {
 							"value": {
-								"en-GB": "Frontender is a collection of systems that in combination are referred to as Frontender. In reality Frontender Desktop (FED), Frontender Platform (FEP) and Frontender Manager (FEM) are the individual components in the ecosystem.\n\n### Frontender Desktop\nFrontender Desktop is the Frontend Management System. It is a desktop application (OSX, Windows and Linux) with which webviews are created, edited and managed from a WYSIWYG User Interface.\n\nFrontender Desktop ‘talks’ to Frontender Platform and Frontender Manager.\n\n### Frontender Platform\nFrontender Platform is the physical environment where your websites ‘live’. Its consists of a the core software and an instance for each website that is managed via that particular core – or also referred to as ‘Space’.\n\nThe space consists of core code and a databases. The core database holds all the Space resources like adapters, controls and blueprints. The space may also contain templates or any other shared assets, which may be overridden from each site using a ‘fallback strategy’.\n\nThe site consists of site specific code like templates, scripts and styling. It also has a database that stores page definitions. \n\nFrontender Platform is a secluded environment and only Frontender Desktop and Frontender Manager have access to it. Frontender Platform has no access to Frontender Manager or Frontender Desktop but it does have an API that can expose information and functionality, but only Frontender Manager and Frontender Desktop are authorised to access the API.\n\n### Frontender Manager\nFrontender Manager is an web application that functions as the control center. It manages all information regarding user-space-site access. Frontender Desktop authenticates users via the Frontender Manager. When the user is successfully logged in, Frontender Manager will serve him all spaces and sites that the user is authorised to manage. Frontender Manager is responsible for access control in Frontender Desktop (not in Frontender Platform!).\n\nFrontender Manager will store the bare minimum data that is required for Frontender Desktop to function. This includes information about the physical location of a Space (via it’s IP) and the roles and permissions for each user and per site.\n\nIt is important to note that when Frontender Manager is offline, it has no implications to Frontender Platform, all sites will continue to function. However, Frontender Desktop will only (partly?) function while it has an active session. So when a user is not logged in to Frontender Desktop, a site’s pages can not be managed until such time Frontender Manager is back online. Again: all sites will still be accessible for visitors.\n\nFrontender Manager has access to Frontender Desktop and Frontender Platform."
+								"en-GB": "* Multi site\n* Multi source\n* Multi lingual\n* True WYSIWYG page management (with real data)\n* Component based\n\nWith Frontender you only ever need a single system to develop all your templates. And, all these templates can be re-used among multiple frontends. And even if you do not require re-use of templates, imagine what a budget saver it will be if your developers will only have to learn a single system."
 							},
 							"label": {
 								"en-GB": "Body"
@@ -497,15 +403,48 @@
 			"blueprint": "5ceba2a2f7269c9ca05e9ea3"
 		},
 		{
-			"frontender": "400eb7bbb212eba83e27218762cf8772",
-			"template": "demo/containers/article/body.html.twig",
+			"frontender": "725e09234be3b31172b3ca52beff769b",
+			"template": "demo/containers/article/image.html.twig",
 			"name": {
-				"en-GB": "Article body"
+				"en-GB": "Paragraph with image"
 			},
 			"description": {
-				"en-GB": "Article body"
+				"en-GB": "Paragraph with configurable image"
 			},
 			"template_config": {
+				"model": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"data": {
+							"value": {
+								"adapter": "Unsplash",
+								"model": "Image\\Search",
+								"id": {
+									"en-GB": "rS1GogPLVHk"
+								}
+							},
+							"label": {
+								"en-GB": "Banner image"
+							},
+							"control": "core/abstract",
+							"type": "lookup",
+							"adapters": [
+								{
+									"value": "Unsplash",
+									"label": "Unsplash",
+									"models": [
+										{
+											"value": "Image\\Search",
+											"label": "Image"
+										}
+									]
+								}
+							]
+						}
+					}
+				},
 				"content": {
 					"label": {
 						"en-GB": "Content"
@@ -513,16 +452,7 @@
 					"controls": {
 						"title": {
 							"value": {
-								"en-GB": "Cupcake passion more than a trend"
-							},
-							"label": {
-								"en-GB": "Title"
-							},
-							"control": "core/text"
-						},
-						"standfirst": {
-							"value": {
-								"en-GB": "Caramels caramels wafer chocolate bar bonbon pie toffee brownie icing. Powder halvah cake lemon drops candy muffin candy icing lemon drops. Macaroon chocolate bar jujubes jujubes cotton candy. Cotton candy chocolate bar cotton candy bonbon soufflé muffin pie pudding marshmallow. Gummies sugar plum biscuit. Donut muffin fruitcake cookie. Bonbon sugar plum gingerbread jelly-o. Danish croissant jelly beans fruitcake. Pastry cookie halvah chocolate bar macaroon oat cake tootsie roll. Sweet roll icing bonbon tart halvah."
+								"en-GB": "One templating system to rule them all"
 							},
 							"label": {
 								"en-GB": "Title"
@@ -530,77 +460,13 @@
 							"control": "core/text"
 						},
 						"body": {
-							"value": [
-								{
-									"title": {
-										"en-GB": "Everything you need to know to make gorgeous cupcakes"
-									},
-									"body": {
-										"en-GB": "Fruitcake tart brownie pie tootsie roll. Croissant dessert dessert brownie jelly beans chocolate bar. Carrot cake chocolate lemon drops dessert sweet roll. Ice cream gummies cotton candy toffee dessert. Cotton candy chocolate bar lollipop cake dragée jujubes wafer. Marshmallow cupcake chocolate bar. Marshmallow oat cake gingerbread cookie jelly beans. Marshmallow danish donut gummies halvah tiramisu cupcake."
-									}
-								},
-								{
-									"title": {
-										"en-GB": "Influencing of guava processing residues incorporation on cupcake characterization"
-									},
-									"body": {
-										"en-GB": "Wafer dragée cookie halvah icing. Tootsie roll liquorice danish bear claw gingerbread pastry halvah liquorice. Caramels wafer bonbon marzipan brownie dragée bonbon lollipop. Biscuit donut apple pie. Marshmallow cake oat cake bear claw donut caramels. Liquorice lemon drops cake jujubes sesame snaps gummi bears sweet.\n\n"
-									}
-								},
-								{
-									"title": {
-										"en-GB": "The cupcake boom is here. The cupcake crash is coming."
-									},
-									"body": {
-										"en-GB": "Cotton candy icing carrot cake pastry gingerbread cake danish. Tootsie roll marshmallow dessert gummies croissant tiramisu lollipop gingerbread sugar plum. Fruitcake dragée cake sweet roll gingerbread jelly beans lemon drops soufflé toffee. Cookie jujubes chocolate croissant chocolate bear claw gummies biscuit jelly-o. Chocolate bar liquorice soufflé sweet roll."
-									}
-								},
-								{
-									"title": {
-										"en-GB": "Forget Gold, the Gourmet Cupcake Market Is Crashing"
-									},
-									"body": {
-										"en-GB": "Powder cheesecake toffee liquorice toffee chocolate cake apple pie caramels. Cupcake icing icing chocolate bar chocolate donut halvah chocolate bar lemon drops. Dragée gummi bears liquorice. Tiramisu oat cake macaroon soufflé jelly beans caramels candy canes. Toffee sesame snaps bear claw dessert wafer. Jelly beans candy sweet roll liquorice caramels lemon drops."
-									}
-								},
-								{
-									"title": {
-										"en-GB": "Cake & Cupcake Decorating Timelines"
-									},
-									"body": {
-										"en-GB": "Lollipop toffee donut bonbon halvah candy biscuit. Bear claw lemon drops tart toffee halvah liquorice dessert cake. Pie brownie jelly beans cake. Cake candy danish powder dessert oat cake gummies donut. Apple pie halvah pie topping ice cream dragée jelly-o muffin. Candy gummi bears lollipop danish halvah bear claw pudding."
-									}
-								}
-							],
+							"value": {
+								"en-GB": "Do you have multiple sources of content that need to be combined on a single webpage? With Frontender you can disclose content from any CMS or CRM. You can display content from Joomla! adjacent to a list of products from Magento. Or, you can list clients from your CRM next to a book review in Wordpress."
+							},
 							"label": {
-								"en-GB": "Body text"
+								"en-GB": "Body"
 							},
-							"controls": {
-								"title": {
-									"hidden": "0",
-									"access": "all",
-									"frontender": "76b5dddf72bee5762ba63d35cebc30d0",
-									"type": "text",
-									"value": "",
-									"label": {
-										"en-GB": "Title"
-									},
-									"control": "core/text"
-								},
-								"body": {
-									"hidden": "0",
-									"access": "all",
-									"frontender": "7196f5a43c22eebe68d55bd2d3e67813",
-									"type": "textarea",
-									"value": "",
-									"label": {
-										"en-GB": "Textarea"
-									},
-									"control": "core/textarea"
-								}
-							},
-							"repeatable": true,
-							"type": "compound"
+							"control": "core/markdown"
 						}
 					}
 				},
@@ -624,15 +490,139 @@
 						"trailer": {
 							"value": "trailer",
 							"control": "project/trailer"
+						},
+						"image_alignment": {
+							"value": "left",
+							"label": {
+								"en-GB": "Image alignment"
+							},
+							"options": [
+								{
+									"value": "left",
+									"label": {
+										"en-GB": "Left"
+									}
+								},
+								{
+									"value": "right",
+									"label": {
+										"en-GB": "Right"
+									}
+								}
+							],
+							"type": "list",
+							"control": "core/abstract"
 						}
 					}
 				}
 			},
 			"containers": [],
-			"blueprint": "5ceb9087f7269c9c68349672"
+			"blueprint": "5ceba2a2f7269c9ca05e9ea3"
 		},
 		{
-			"frontender": "44b0665c5bd98d3eb20eeb5c0cb70b7b",
+			"frontender": "1559131001",
+			"template": "demo/containers/form/form.html.twig",
+			"name": {
+				"en-GB": "Form"
+			},
+			"description": {
+				"en-GB": "Form container"
+			},
+			"template_config": {
+				"content": {
+					"label": {
+						"en-GB": "Content"
+					},
+					"controls": {
+						"title": {
+							"value": {
+								"en-GB": "Got any questions about Frontender?"
+							},
+							"label": {
+								"en-GB": "Title"
+							},
+							"control": "core/text"
+						},
+						"select": {
+							"label": {
+								"en-GB": "Select options"
+							},
+							"value": [
+								{
+									"en-GB": "Pricing"
+								},
+								{
+									"en-GB": "Implementation"
+								},
+								{
+									"en-GB": "Introduction"
+								}
+							],
+							"repeatable": true,
+							"at_least": 1,
+							"at_most": 20,
+							"control": "core/text"
+						},
+						"radio": {
+							"label": {
+								"en-GB": "Radio options"
+							},
+							"value": [
+								{
+									"en-GB": "By using this form I agree to the terms and conditions"
+								}
+							],
+							"repeatable": true,
+							"at_least": 1,
+							"at_most": 20,
+							"control": "core/text"
+						},
+						"checkbox": {
+							"label": {
+								"en-GB": "Checkboxes"
+							},
+							"value": [
+								{
+									"en-GB": "Email me a copy of this message"
+								},
+								{
+									"en-GB": "I am a human and not a robot"
+								}
+							],
+							"repeatable": true,
+							"at_least": 1,
+							"at_most": 20,
+							"control": "core/text"
+						}
+					}
+				},
+				"config": {
+					"label": {
+						"en-GB": "Settings"
+					},
+					"controls": {
+						"container_tag": {
+							"value": "section",
+							"control": "project/container_tag"
+						},
+						"container_class": {
+							"value": "container",
+							"control": "project/container_class"
+						},
+						"leader": {
+							"value": "leader",
+							"control": "project/leader"
+						},
+						"trailer": {
+							"value": "trailer",
+							"control": "project/trailer"
+						}
+					}
+				}
+			}
+		},
+		{
+			"frontender": "3ade1d98cf2e7b4fd87e331003321ace",
 			"template": "demo/containers/footer.html.twig",
 			"name": {
 				"en-GB": "Footer"
@@ -791,6 +781,6 @@
 		}
 	],
 	"name": {
-		"en-GB": "Homepage"
+		"en-GB": "Welcome"
 	}
 }
