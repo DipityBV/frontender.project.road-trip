@@ -4443,17 +4443,6 @@
 		display: block;
 	}
 
-	@media screen and (max-width: 736px) {
-		.post {
-			min-height: 100vh;
-		}
-	}
-	@media screen and (min-width: 736px) {
-		.post {
-			height: auto;
-		}
-	}
-
 	.leader {
 		margin-top: 75px;
 	}
@@ -4475,7 +4464,7 @@
 
 	.accreditation {
 		position: relative;
-		padding: 3em 0 1.5em;
+		padding: 1.5em 0;
 		color: #fff;
 		border-top: thin solid;
     	border-color: rgba(255, 255, 255, .26);
@@ -4485,6 +4474,7 @@
 		position: relative;
 		display: inline-block;
 		width: 50%;
+		margin: 0;
 	}
 	.accreditation__attribution {
 		text-align: right;
@@ -4576,7 +4566,6 @@
 		color: rgba(0, 0, 0, .6);
 	}
 
-
 	.post .box .content,
 	.post .box h1, .post .box h2, .post .box h3, .post .box h4, .post .box h5, .post .box h6  {
 		color: #fff;
@@ -4586,7 +4575,10 @@
 	#form input[type="checkbox"] + label, #form input[type="radio"] + label {
 		color: inherit;
 	}
-
+	#article p + pre,
+	#article h3 + pre {
+		margin-top: -1em;
+	}
 	#article .row > * {
 		padding: 2em;
 		min-height: 400px;
@@ -4601,7 +4593,10 @@
 	}
 
 	#footer .copyright {
-		margin: 6em 0 2em 0;
+		margin: 4em 0 2em 0;
+	}
+	#footer .icons {
+		padding-top: 0;
 	}
 
 	#menu .close {
@@ -4611,4 +4606,41 @@
 	.inner .box h1 {
 		margin-bottom: 0;
 		font-size: 2.75em;
+	}
+
+	@media screen and (max-width: 480px) {
+		#header {
+			background: transparent;
+		}
+	}
+	@media screen and (max-width: 736px) {
+		#footer .copyright {
+			margin: 2em 0;
+		}
+
+		.post {
+			min-height: 100vh;
+		}
+
+		.leader {
+			margin-top: 30px;
+		}
+		.leader-inside {
+			padding-top: 30px;
+		}
+		.trailer {
+			margin-bottom: 30px;
+		}
+		.trailer-inside {
+			padding-bottom: 30px;
+		}
+	}
+	@media screen and (min-width: 736px) {
+		.radio > div {
+			display: inline-block;
+		}
+
+		.post {
+			height: auto;
+		}
 	}
