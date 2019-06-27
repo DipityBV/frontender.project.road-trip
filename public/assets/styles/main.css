@@ -4442,6 +4442,10 @@
 	.box .row .image.fit caption {
 		display: block;
 	}
+	.box header p {
+		/* Slightly increased subtitle size */
+		font-size: 1.125em;
+	}
 
 	.leader {
 		margin-top: 75px;
@@ -4475,6 +4479,7 @@
 		display: inline-block;
 		width: 50%;
 		margin: 0;
+		vertical-align: top;
 	}
 	.accreditation__attribution {
 		text-align: right;
@@ -4614,14 +4619,27 @@
 		}
 	}
 	@media screen and (max-width: 736px) {
+		body {
+			font-size: 14px;
+		}
 		#footer .copyright {
 			margin: 2em 0;
 		}
 
+		.inner .box h1 {
+			font-size: 1.75em;
+		}
+		.image.right,
+		.image.left {
+			top: 0;
+			margin: 0 0 2em;
+			max-width: 100%;
+			float: none;
+		}
 		.post {
 			min-height: 100vh;
+			background-attachment: fixed;
 		}
-
 		.leader {
 			margin-top: 30px;
 		}
@@ -4639,7 +4657,6 @@
 		.radio > div {
 			display: inline-block;
 		}
-
 		.post {
 			height: auto;
 		}
