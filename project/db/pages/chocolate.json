@@ -15,7 +15,7 @@
 			"controls": {
 				"title": {
 					"value": {
-						"en-GB": ""
+						"en-GB": "Frontender demo - Chocolate"
 					},
 					"label": {
 						"en-GB": "Page title"
@@ -101,6 +101,13 @@
 						},
 						"links": {
 							"value": [
+								{
+                                    "label": {
+                                        "en-GB": "Cupcake article"
+                                    },
+                                    "page": "/cupcake",
+                                    "id": ""
+                                },
 								{
 									"label": {
 										"en-GB": "Demo menu"
