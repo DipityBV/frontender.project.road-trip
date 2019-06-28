@@ -339,8 +339,12 @@
 							"control": "project/container_tag"
 						},
 						"container_class": {
-							"value": "container",
+							"value": "",
 							"control": "project/container_class"
+						},
+						"container_width": {
+							"value": "container",
+							"control": "project/container_width"
 						},
 						"leader": {
 							"value": "leader",
@@ -456,8 +460,12 @@
 							"control": "project/container_tag"
 						},
 						"container_class": {
-							"value": "container",
+							"value": "",
 							"control": "project/container_class"
+						},
+						"container_width": {
+							"value": "container",
+							"control": "project/container_width"
 						},
 						"leader": {
 							"value": "leader",
@@ -582,8 +590,12 @@
 							"control": "project/container_tag"
 						},
 						"container_class": {
-							"value": "container",
+							"value": "",
 							"control": "project/container_class"
+						},
+						"container_width": {
+							"value": "container",
+							"control": "project/container_width"
 						},
 						"leader": {
 							"value": "leader",
