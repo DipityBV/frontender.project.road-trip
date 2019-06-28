@@ -4660,4 +4660,7 @@
 		.post {
 			height: auto;
 		}
+		.row > * {
+			padding: 2em;
+		}
 	}
