@@ -1,0 +1,29 @@
+{
+    "value": "container",
+    "label": {
+        "en-GB": "Container width"
+    },
+    "hidden": "0",
+    "access": "all",
+    "type": "list",
+    "options": [
+        {
+            "value": "",
+            "label": {
+                "en-GB": "Full width"
+            }
+        },
+        {
+            "value": "container",
+            "label": {
+                "en-GB": "Medium"
+            }
+        },
+        {
+            "value": "container inner",
+            "label": {
+                "en-GB": "Small"
+            }
+        }
+    ]
+}

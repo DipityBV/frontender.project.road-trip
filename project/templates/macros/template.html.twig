@@ -16,7 +16,8 @@
     {{ [
         config.container_class ? config.container_class,
         config.leader ? config.leader,
-        config.trailer ? config.trailer
+        config.trailer ? config.trailer,
+        config.container_width ? config.container_width
     ]|join(' ')|trim }}
 {% endmacro %}
 
