@@ -62,10 +62,7 @@
 			"controls": {
 				"container_class": {
 					"value": "",
-					"label": {
-						"en-GB": "Body class"
-					},
-					"core": "core/text"
+					"core": "project/container_class"
 				},
 				"cupcake": {
 					"label": {
@@ -399,7 +396,7 @@
 								"adapter": "Unsplash",
 								"model": "Image\\Search",
 								"id": {
-									"en-GB": "XrAsKFIEPvE"
+									"en-GB": "hG-lZT9ZcrM"
 								}
 							},
 							"label": {

@@ -15,7 +15,7 @@
 			"controls": {
 				"title": {
 					"value": {
-						"en-GB": "Frontender - Maintenance"
+						"en-GB": "Frontender demo - Under maintenance"
 					},
 					"label": {
 						"en-GB": "Page title"
@@ -62,16 +62,13 @@
 			"controls": {
 				"container_class": {
 					"value": "",
-					"label": {
-						"en-GB": "Body class"
-					},
 					"core": "project/container_class"
 				},
 				"cupcake": {
 					"label": {
 						"en-GB": "Background colour"
 					},
-					"value": "cake__frosting",
+					"value": "",
 					"type": "list",
 					"options": [
 						{
@@ -135,12 +132,12 @@
 						"links": {
 							"value": [
 								{
-                                    "label": {
-                                        "en-GB": "Cupcake article"
-                                    },
-                                    "page": "/cupcake",
-                                    "id": ""
-                                },
+									"label": {
+										"en-GB": "Cupcake article"
+									},
+									"page": "/cupcake",
+									"id": ""
+								},
 								{
 									"label": {
 										"en-GB": "Demo menu"

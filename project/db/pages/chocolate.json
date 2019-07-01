@@ -5,7 +5,7 @@
 	"frontender": "8d5203e2ed2c0deafc84fe9055f6ff20",
 	"template": "demo/layouts/default.html.twig",
 	"description": {
-		"en-GB": "Chocolate showcase (Proxy)"
+		"en-GB": "Chocolate showcase"
 	},
 	"page_config": {
 		"seo": {
@@ -62,10 +62,7 @@
 			"controls": {
 				"container_class": {
 					"value": "",
-					"label": {
-						"en-GB": "Body class"
-					},
-					"core": "core/text"
+					"core": "project/container_class"
 				}
 			}
 		}
@@ -310,7 +307,7 @@
 							"control": "project/container_class"
 						},
 						"container_width": {
-							"value": "container",
+							"value": "container inner",
 							"control": "project/container_width"
 						},
 						"leader": {
@@ -431,7 +428,7 @@
 							"control": "project/container_class"
 						},
 						"container_width": {
-							"value": "container",
+							"value": "container inner",
 							"control": "project/container_width"
 						},
 						"leader": {

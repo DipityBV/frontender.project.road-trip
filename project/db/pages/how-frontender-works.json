@@ -62,9 +62,6 @@
 			"controls": {
 				"container_class": {
 					"value": "",
-					"label": {
-						"en-GB": "Body class"
-					},
 					"core": "project/container_class"
 				},
 				"cupcake": {
@@ -320,7 +317,7 @@
 						},
 						"body": {
 							"value": {
-								"en-GB": "Powder icing cake icing sweet muffin. Sweet roll dragée sweet roll. Dessert tootsie roll macaroon fruitcake liquorice sweet biscuit tiramisu danish. Gummi bears lollipop tiramisu donut tootsie roll jelly beans donut. Cookie toffee apple pie soufflé soufflé. Gummies cookie jelly-o lemon drops halvah tiramisu donut.\n\nDanish tart topping. Danish marzipan jelly beans bonbon ice cream chocolate bar. Icing apple pie marshmallow. Tiramisu donut jujubes cake dessert. Sugar plum sweet dessert jujubes tart. Jelly-o chocolate cake halvah toffee cake lemon drops. Cheesecake pie wafer apple pie candy cupcake toffee.\n\nPie fruitcake tart apple pie halvah lemon drops sesame snaps. Caramels cookie cake pie soufflé lemon drops. Candy sugar plum bear claw brownie marshmallow bear claw cupcake powder. Fruitcake chocolate bonbon oat cake icing sweet roll. Oat cake toffee chocolate cake chocolate carrot cake danish chocolate bar danish pastry. Sesame snaps jelly-o carrot cake."
+								"en-GB": "Content, design and technology are the cornerstones of online publishing. A successful combination of each of these results in a better user experience, which leads to happier visitors and higher conversions. And yet, the way in which we publish content to the web is compromised by one of those very cornerstones – technology.\n\nFor years now, we use content management systems to produce content. We construct web pages from that content by injecting it into templates that can be published by the CMS. While that process is simple and offers many benefits, it also introduces many disadvantages. \n\nDeveloping templates is different for each of those systems, and most of them have highly opinionated ideas about structure, composition and technology making templates and content tightly integrated within those systems. Content and presentation sit tightly integrated within the CMS, impairing re-use of both content as well as presentation.\n\nFrontender changes that. With Frontender you publish your content how, where and when you want. On any device, in any format, and in any language. From any source and to as many websites or applications as you need. Using your favourite front-end technology stack and your favourite CMS."
 							},
 							"label": {
 								"en-GB": "Body"
