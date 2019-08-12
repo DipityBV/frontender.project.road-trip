@@ -41,7 +41,7 @@
 
             <div class="12u$ radio">
                 {% for radio in content.radio %}<div class="6u 12u$(small)">
-                    <input type="radio" id="{{ radio|t|lower|replace({' ': '-'}) }}" name="priority" checked="">
+                    <input type="radio" id="{{ radio|t|lower|replace({' ': '-'}) }}" name="priority">
                     <label for="{{ radio|t|lower|replace({' ': '-'}) }}">{{ radio|t }}</label>
                 </div>{% endfor %}
             </div>
