@@ -4612,8 +4612,18 @@
 		padding-top: 0;
 	}
 
+	#menu {
+		padding: 3em 0;
+	}
 	#menu .close {
 		color: #fff;
+		width: 3em;
+	}
+	#menu > ul.links > li > a {
+		padding: 0 2em;
+	}
+	#menu > ul.links > li > a:not(.button):hover {
+		background: rgba(0, 0, 0, .05);
 	}
 
 	.inner .box h1 {
