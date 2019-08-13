@@ -4616,14 +4616,25 @@
 		padding: 3em 0;
 	}
 	#menu .close {
-		color: #fff;
-		width: 3em;
+		padding: 0;
+		width: 44px;
+		height: 44px;
+		line-height: 44px;
+		text-align: center;
+		color: #FFF;
 	}
 	#menu > ul.links > li > a {
 		padding: 0 2em;
 	}
-	#menu > ul.links > li > a:not(.button):hover {
+	#menu > ul.links > li > a:not(.button):hover,
+	#menu > ul.links > li > a:not(.button):active,
+	#menu .close:hover,
+	#menu .close:active {
 		background: rgba(0, 0, 0, .05);
+	}
+
+	#footer .icon.round:hover {
+		color: #fff;
 	}
 
 	.inner .box h1 {
@@ -4683,5 +4694,12 @@
 		}
 		#article .left ~ ul li {
 	    	left: 20px;
+		}
+	}
+	@media screen and (min-width: 1680px) {
+		#menu .close {
+			width: 52px;
+			height: 52px;
+			line-height: 52px;
 		}
 	}
