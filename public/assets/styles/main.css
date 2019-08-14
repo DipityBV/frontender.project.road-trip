@@ -4488,12 +4488,16 @@
 		text-align: left
 	}
 	.attribution__brand {
-		height: 1em;
+		height: 2em;
 		padding-right: .5em;
+		vertical-align: middle;
 	}
 	#banner .attribution__brand,
 	#banner .attribution__slogan {
 		vertical-align: middle;
+	}
+	#banner .attribution__brand {
+		height: 1em;
 	}
 
 	.cake, .cake__blue, .cake__teal, .cake__frosting,
