@@ -21,17 +21,17 @@
     <form>
         <div class="row uniform">
             <div class="6u 12u$(xsmall)">
-                <input type="text" name="i-name" id="i-name" value="" placeholder="Name">
+                <input type="text" name="i-name" id="i-name" placeholder="Name">
             </div>
             <div class="6u$ 12u$(xsmall)">
-                <input type="email" name="i-email" id="i-email" value="" placeholder="Email">
+                <input type="email" name="i-email" id="i-email" placeholder="Email">
             </div>
 
             <div class="12u$">
                 <div class="select-wrapper">
                     <select name="category" id="category">
                         <!-- Placeholder value -->
-                        <option value="">- Category -</option>
+                        <option value="" hidden>- Category -</option>
 
                         <!-- Configured options -->
                         {% for option in content.select %}

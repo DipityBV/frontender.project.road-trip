@@ -15,7 +15,9 @@
 
 <{{ config.container_tag|default('footer') }} {{ helper.class_attribute(config, ['']|join('  |  ')|trim)|raw }} id="footer" {{ helper.container_id_attribute(frontender, 'frontender')|raw }}>
     <div class="inner">
-        <h2>{{ content.title|t }}</h2>
+        {% if content.title|t %}
+            <h2>{{ content.title|t }}</h2>
+        {% endif %}
 
         <form action="#" method="post">
             <div class="field half first">

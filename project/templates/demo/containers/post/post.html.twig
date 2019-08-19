@@ -24,7 +24,9 @@
             {% if content.title|t %}
                 <header>
                     <h1>{{ content.title|t }}</h1>
-                    <p>{{ content.date|t }}</p>
+                    {% if content.date|t %}
+                        <p>{{ content.date|t }}</p>
+                    {% endif %}
                 </header>
             {% endif %}
 

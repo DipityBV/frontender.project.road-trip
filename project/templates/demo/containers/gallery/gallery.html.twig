@@ -25,7 +25,9 @@
                     {% if item.description %}
                         <em>{{ item.description }}</em>
                     {% endif %}
-                    <p>By: {{ item.user.name }}</p>
+                    {% if item.user.name %}
+                        <p>By: {{ item.user.name }}</p>
+                    {% endif %}
                 </div>
             {% endfor %}
         </div>
